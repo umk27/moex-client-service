@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=yes, width-device-width, initial-scale=1.0,
+maximum-scale=1.0">
+    <title>Title</title>
+    <link th:href="@{/css/show-share-info.css}" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <a href="/"><img class="moex" th:src="@{/images/moex-logo.svg}"/></a>
+    <h3>
+        <label class="head" for="shortName">Информация об акции</label>
+        <output class="head" name="shortName" id="shortName" th:text="${share.getShortName()}"></output>
+    </h3>
+    <hr class="line1"/>
+</header>
+
+<div class="info">
+    <label for="secid">SecId</label>
+    <output name="secid" id="secid" th:text="${share.getSecId()}"></output>
+    <br>
+    <label for="shortName">Сокращенное наименование</label>
+    <output name="shortName" id="shortName" th:text="${share.getShortName()}"></output>
+    <br/>
+    <label for="latName">Латинское наименование</label>
+    <output name="latName" id="latName" th:text="${share.getLatName()}"></output>
+    <br/>
+    <label for="prevPrice">Предварительная стоимость, руб</label>
+    <output name="prevPrice" id="prevPrice" th:text="${share.getPrevPrice()}"></output>
+    <br/>
+    <label for="lotSize">Величина лота</label>
+    <output name="lotSize" id="lotSize" th:text="${share.getLotSize()}"></output>
+    <br/>
+    <label for="lotPrice">Предварительная стоимость лота, руб</label>
+    <output name="lotPrice" id="lotPrice" th:text="${share.getLotPrice()}"></output>
+    <br/>
+    <label for="dividendsInYear">Выплат дивидендов в году</label>
+    <output name="dividendsInYear" id="dividendsInYear" th:text="${share.getDividendsInYear()}"></output>
+    <br/>
+    <label for="dividendsIncome">Годовой доход по дивидендам на 1 акцию, руб</label>
+    <output name="dividendsIncome" id="dividendsIncome" th:text="${share.getDividendsIncome()}"></output>
+    <br/>
+    <label for="dividendsIncomeLot">Годовой доход по дивидендам на 1 лот, руб</label>
+    <output name="dividendsIncomeLot" id="dividendsIncomeLot" th:text="${share.getDividendsIncomeLot()}"></output>
+    <br/>
+    <label for="dividendsIncomePrc">Годовой доход по дивидендам, %</label>
+    <output name="dividendsIncomePrc" id="dividendsIncomePrc" th:text="${share.getDividendsIncomePrc()}"> %</output>
+    <br/>
+    <br/>
+    <div class="dividends" th:each="dividends: ${share.getDividendsInYearList()}">
+        <label for="registryCloseDate">Дата выплаты дивидендов</label>
+        <output name="registryCloseDate" id="registryCloseDate" th:text="${dividends.getRegistryCloseDate()}"></output>
+        <br/>
+        <label for="value">Величина выплаты, руб</label>
+        <output name="value" id="value" th:text="${dividends.getValue()}"></output>
+        <br/>
+    </div>
+
+</div>
+
+<hr class="line2"/>
+
+</body>
+</html>

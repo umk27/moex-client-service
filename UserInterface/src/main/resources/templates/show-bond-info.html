@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <label for="secid">SecId</label>
+    <output name="secid" id="secid" th:text="${bond.getSecId()}"></output>
+    <br>
+    <label for="shortName">Сокращенное наименование</label>
+    <output name="shortName" id="shortName" th:text="${bond.getShortName()}"></output>
+    <br>
+    <label for="latName">Латинское наименование</label>
+    <output name="latName" id="latName" th:text="${bond.getLatName()}"></output>
+    <br>
+    <label for="prevPrice">Предварительная стоимость, руб</label>
+    <output name="prevPrice" id="prevPrice" th:text="${bond.getPrevPrice()}"></output>
+    <br>
+    <label for="couponPeriod">Купонный период, дней</label>
+    <output name="couponPeriod" id="couponPeriod" th:text="${bond.getCouponPeriod()}"></output>
+    <br>
+    <label for="nextCouponDate">Дата выплаты следующего купона</label>
+    <output name="nextCouponDate" id="nextCouponDate" th:text="${bond.getNextCouponDate()}"></output>
+    <br>
+   <label for="couponNextValue">Величина следующего купона, руб</label>
+    <output name="couponNextValue" id="couponNextValue" th:text="${bond.getCouponNextValue()}"></output>
+    <br>
+    <label for="couponPercent">Ставка по купону, %</label>
+    <output name="couponPercent" id="couponPercent" th:text="${bond.getCouponPercent()}"></output>
+    <br>
+    <label for="amortization">Амортизация</label>
+    <output name="amortization" id="amortization" th:text="${bond.isAmortization()}"></output>
+    <br>
+    <label for="couponIncome">Годовой купонный доход, руб</label>
+    <output name="couponIncome" id="couponIncome" th:text="${bond.getCouponIncome()}"></output>
+    <br>
+    <label for="couponIncomePrc">Годовой купонный доход, %</label>
+    <output name="couponIncomePrc" id="couponIncomePrc" th:text="${bond.getCouponIncomePercent()}"></output>
+    <br>
+</div>
+
+</body>
+</html>

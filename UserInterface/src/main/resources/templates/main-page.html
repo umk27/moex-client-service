@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=yes, width-device-width, initial-scale=1.0,
+maximum-scale=1.0">
+    <title>Title</title>
+    <link th:href="@{/css/main-page.css}" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img class="moex" th:src="@{/images/moex-logo.svg}"/>
+    <h2>Данный сервис позволяет получать информацию о ценных бумагах с Московской биржи
+        и рассчитать их доходность</h2>
+    <hr class="line1"/>
+    <h3>Для получения информации об акциях или облигациях и рассчета их доходности,
+        нажмите на кнопку "акции", либо "облигации", соответственно</h3>
+    <hr class="line2"/>
+</header>
+
+<button class="shares" onclick="addShareSecidPage()">Акции</button>
+<button class="bonds" onclick="addBondSecidPage()">Облигации</button>
+
+<script>
+    function addShareSecidPage() {
+        document.location.href = "/add-share-secid";
+    }
+
+    function addBondSecidPage() {
+        document.location.href = "/add-bond-secid";
+    }
+</script>
+
+<p class="mes">*Приложение работает только с российскими рублевыми акциями и облигациями</p>
+
+<footer>
+    <hr class="line3"/>
+
+</footer>
+
+</body>
+</html>

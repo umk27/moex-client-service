@@ -1,0 +1,379 @@
+2022-07-04 21:05:26.678  INFO 4140 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 4140 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:05:26.689  INFO 4140 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:05:26.854  INFO 4140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:05:26.854  INFO 4140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:05:28.556  INFO 4140 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:05:29.683  INFO 4140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:05:29.699  INFO 4140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:05:29.699  INFO 4140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:05:29.867  INFO 4140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:05:29.875  INFO 4140 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3021 ms
+2022-07-04 21:05:30.331  WARN 4140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:05:32.825  INFO 4140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:05:33.129  INFO 4140 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 8.91 seconds (JVM running for 12.362)
+2022-07-04 21:07:09.275  INFO 4140 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:07:09.275  INFO 4140 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:07:09.275  INFO 4140 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 21:07:22.959  INFO 4140 --- [http-nio-80-exec-3] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:07:24.324  INFO 4140 --- [http-nio-80-exec-3] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:14:41.028  INFO 12252 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 12252 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:14:41.036  INFO 12252 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:14:41.147  INFO 12252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:14:41.147  INFO 12252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:14:42.487  INFO 12252 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:14:43.546  INFO 12252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:14:43.554  INFO 12252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:14:43.554  INFO 12252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:14:43.723  INFO 12252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:14:43.723  INFO 12252 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2576 ms
+2022-07-04 21:14:44.171  WARN 12252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:14:45.873  INFO 12252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:14:46.013  INFO 12252 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.101 seconds (JVM running for 8.795)
+2022-07-04 21:15:01.389  INFO 12252 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:15:01.389  INFO 12252 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:15:01.397  INFO 12252 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-07-04 21:15:37.657  INFO 12252 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:15:37.733 ERROR 12252 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Сервис акций не доступен
+2022-07-04 21:15:38.263  INFO 12252 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:15:38.263 ERROR 12252 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Сервис акций не доступен
+2022-07-04 21:15:38.772  INFO 12252 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:15:38.781 ERROR 12252 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Сервис акций не доступен
+2022-07-04 21:15:48.396  INFO 12252 --- [http-nio-80-exec-3] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:15:48.574  INFO 12252 --- [http-nio-80-exec-3] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:34:56.431  INFO 3656 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 3656 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:34:56.431  INFO 3656 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:34:56.507  INFO 3656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:34:56.507  INFO 3656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:34:57.747  INFO 3656 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:34:58.818  INFO 3656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:34:58.835  INFO 3656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:34:58.835  INFO 3656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:34:59.004  INFO 3656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:34:59.004  INFO 3656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2497 ms
+2022-07-04 21:34:59.452  WARN 3656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:35:01.243  INFO 3656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:35:01.401  INFO 3656 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.122 seconds (JVM running for 8.153)
+2022-07-04 21:35:12.078  INFO 3656 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:35:12.078  INFO 3656 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:35:12.078  INFO 3656 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 21:36:09.493  INFO 3656 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:36:10.279  INFO 3656 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:43:07.657  INFO 6264 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 6264 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:43:07.657  INFO 6264 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:43:07.727  INFO 6264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:43:07.727  INFO 6264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:43:09.022  INFO 6264 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:43:10.064  INFO 6264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:43:10.081  INFO 6264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:43:10.081  INFO 6264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:43:10.239  INFO 6264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:43:10.239  INFO 6264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2504 ms
+2022-07-04 21:43:10.647  WARN 6264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:43:12.305  INFO 6264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:43:12.447  INFO 6264 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.721 seconds (JVM running for 7.567)
+2022-07-04 21:43:24.890  INFO 6264 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:43:24.898  INFO 6264 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:43:24.898  INFO 6264 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 21:43:41.100  INFO 6264 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:43:41.292  INFO 6264 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:44:02.568  INFO 6264 --- [http-nio-80-exec-5] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:44:02.664  INFO 6264 --- [http-nio-80-exec-5] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:45:46.872  INFO 4652 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 4652 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:45:46.872  INFO 4652 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:45:46.958  INFO 4652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:45:46.958  INFO 4652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:45:48.570  INFO 4652 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:45:49.745  INFO 4652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:45:49.761  INFO 4652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:45:49.761  INFO 4652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:45:49.968  INFO 4652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:45:49.968  INFO 4652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3010 ms
+2022-07-04 21:45:50.478  WARN 4652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:45:52.561  INFO 4652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:45:52.718  INFO 4652 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.856 seconds (JVM running for 10.354)
+2022-07-04 21:46:00.578  INFO 4652 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:46:00.578  INFO 4652 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:46:00.578  INFO 4652 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 21:46:09.759  INFO 4652 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:46:09.956  INFO 4652 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:50:07.372  INFO 10056 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10056 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:50:07.372  INFO 10056 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:50:07.451  INFO 10056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:50:07.459  INFO 10056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:50:08.700  INFO 10056 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:50:09.775  INFO 10056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:50:09.783  INFO 10056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:50:09.783  INFO 10056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:50:09.950  INFO 10056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:50:09.958  INFO 10056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2499 ms
+2022-07-04 21:50:10.400  WARN 10056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:50:12.126  INFO 10056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:50:12.275  INFO 10056 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.702 seconds (JVM running for 8.358)
+2022-07-04 21:50:27.266  INFO 10056 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:50:27.266  INFO 10056 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:50:27.266  INFO 10056 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 21:50:37.038  INFO 10056 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:50:37.254  INFO 10056 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 21:57:01.191  INFO 10712 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10712 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 21:57:01.199  INFO 10712 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 21:57:01.295  INFO 10712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 21:57:01.295  INFO 10712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 21:57:02.515  INFO 10712 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 21:57:03.544  INFO 10712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 21:57:03.552  INFO 10712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 21:57:03.552  INFO 10712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 21:57:03.714  INFO 10712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 21:57:03.714  INFO 10712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2419 ms
+2022-07-04 21:57:04.130  WARN 10712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 21:57:05.996  INFO 10712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 21:57:06.238  INFO 10712 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.724 seconds (JVM running for 8.254)
+2022-07-04 21:57:09.475  INFO 10712 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 21:57:09.475  INFO 10712 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 21:57:09.475  INFO 10712 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 21:57:13.530  INFO 10712 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 21:57:13.754  INFO 10712 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:00:10.901  INFO 4900 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 4900 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:00:10.901  INFO 4900 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:00:10.976  INFO 4900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:00:10.976  INFO 4900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:00:12.209  INFO 4900 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:00:13.259  INFO 4900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:00:13.276  INFO 4900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:00:13.276  INFO 4900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:00:13.442  INFO 4900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:00:13.442  INFO 4900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2466 ms
+2022-07-04 22:00:13.874  WARN 4900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:00:15.590  INFO 4900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:00:15.726  INFO 4900 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.623 seconds (JVM running for 8.009)
+2022-07-04 22:00:40.612  INFO 4900 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:00:40.612  INFO 4900 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:00:40.612  INFO 4900 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:00:49.111  INFO 4900 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:00:49.302  INFO 4900 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:04:50.092  INFO 1072 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 1072 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:04:50.100  INFO 1072 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:04:50.176  INFO 1072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:04:50.176  INFO 1072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:04:51.472  INFO 1072 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:04:52.580  INFO 1072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:04:52.589  INFO 1072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:04:52.589  INFO 1072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:04:52.755  INFO 1072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:04:52.755  INFO 1072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2579 ms
+2022-07-04 22:04:53.180  WARN 1072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:04:54.880  INFO 1072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:04:55.021  INFO 1072 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.011 seconds (JVM running for 7.876)
+2022-07-04 22:04:59.238  INFO 1072 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:04:59.238  INFO 1072 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:04:59.246  INFO 1072 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:05:07.359  INFO 1072 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:05:07.559  INFO 1072 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:06:40.853  INFO 10072 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10072 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:06:40.853  INFO 10072 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:06:40.927  INFO 10072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:06:40.927  INFO 10072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:06:42.169  INFO 10072 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:06:43.368  INFO 10072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:06:43.385  INFO 10072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:06:43.385  INFO 10072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:06:43.568  INFO 10072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:06:43.568  INFO 10072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2641 ms
+2022-07-04 22:06:44.018  WARN 10072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:06:45.801  INFO 10072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:06:45.942  INFO 10072 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.99 seconds (JVM running for 8.181)
+2022-07-04 22:06:52.115  INFO 10072 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:06:52.115  INFO 10072 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:06:52.115  INFO 10072 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:06:56.681  INFO 10072 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:06:56.889  INFO 10072 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:15:19.158  INFO 11536 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 11536 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:15:19.166  INFO 11536 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:15:19.269  INFO 11536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:15:19.269  INFO 11536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:15:20.522  INFO 11536 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:15:21.599  INFO 11536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:15:21.607  INFO 11536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:15:21.607  INFO 11536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:15:21.772  INFO 11536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:15:21.772  INFO 11536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2503 ms
+2022-07-04 22:15:22.197  WARN 11536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:15:23.913  INFO 11536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:15:24.073  INFO 11536 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.666 seconds (JVM running for 7.864)
+2022-07-04 22:17:20.012  INFO 8332 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 8332 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:17:20.017  INFO 8332 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:17:20.091  INFO 8332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:17:20.091  INFO 8332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:17:21.282  INFO 8332 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:17:22.348  INFO 8332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:17:22.357  INFO 8332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:17:22.357  INFO 8332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:17:22.507  INFO 8332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:17:22.515  INFO 8332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2424 ms
+2022-07-04 22:17:22.931  WARN 8332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:17:24.641  INFO 8332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:17:24.781  INFO 8332 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.489 seconds (JVM running for 7.064)
+2022-07-04 22:17:31.061  INFO 8332 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:17:31.061  INFO 8332 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:17:31.061  INFO 8332 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:17:35.160  INFO 8332 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:17:35.723  INFO 8332 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:18:52.044  INFO 8332 --- [http-nio-80-exec-8] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:18:52.188  INFO 8332 --- [http-nio-80-exec-8] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:30:54.882  INFO 8400 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 8400 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:30:54.882  INFO 8400 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:30:54.959  INFO 8400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:30:54.959  INFO 8400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:30:56.145  INFO 8400 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:30:57.262  INFO 8400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:30:57.270  INFO 8400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:30:57.278  INFO 8400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:30:57.445  INFO 8400 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:30:57.445  INFO 8400 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2486 ms
+2022-07-04 22:30:57.887  INFO 8400 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-04 22:30:59.703  INFO 8400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:30:59.836  INFO 8400 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.673 seconds (JVM running for 7.149)
+2022-07-04 22:31:01.470  INFO 8400 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:31:01.478  INFO 8400 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:31:01.478  INFO 8400 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:31:11.846  INFO 8400 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:31:11.870 ERROR 8400 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Сервис акций не доступен
+2022-07-04 22:31:12.386  INFO 8400 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:31:12.410 ERROR 8400 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Сервис акций не доступен
+2022-07-04 22:31:12.917  INFO 8400 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:31:12.917 ERROR 8400 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Сервис акций не доступен
+2022-07-04 22:35:02.915  INFO 8400 --- [http-nio-80-exec-10] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:35:04.430  INFO 8400 --- [http-nio-80-exec-10] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:37:13.421  INFO 8824 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 8824 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:37:13.421  INFO 8824 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:37:13.518  INFO 8824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:37:13.518  INFO 8824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:37:14.720  INFO 8824 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:37:15.778  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:37:15.786  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:37:15.786  INFO 8824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:37:15.947  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:37:15.955  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2437 ms
+2022-07-04 22:37:16.382  WARN 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:37:18.119  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:37:18.261  INFO 8824 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.745 seconds (JVM running for 8.111)
+2022-07-04 22:37:29.169  INFO 8824 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:37:29.169  INFO 8824 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:37:29.169  INFO 8824 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:37:36.663  INFO 8824 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:37:37.746  INFO 8824 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:38:48.405  INFO 7844 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 7844 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:38:48.405  INFO 7844 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:38:48.590  INFO 7844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:38:48.590  INFO 7844 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:38:50.175  INFO 7844 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:38:51.367  INFO 7844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:38:51.383  INFO 7844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:38:51.383  INFO 7844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:38:51.551  INFO 7844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:38:51.551  INFO 7844 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2953 ms
+2022-07-04 22:38:52.015  WARN 7844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:38:53.900  INFO 7844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:38:54.054  INFO 7844 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.965 seconds (JVM running for 8.399)
+2022-07-04 22:38:58.741  INFO 7844 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:38:58.741  INFO 7844 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:38:58.749  INFO 7844 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:39:04.942  INFO 7844 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:39:05.126  INFO 7844 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:41:18.781  INFO 5176 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 5176 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:41:18.789  INFO 5176 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:41:18.860  INFO 5176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:41:18.860  INFO 5176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:41:20.072  INFO 5176 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:41:21.096  INFO 5176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:41:21.113  INFO 5176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:41:21.114  INFO 5176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:41:21.280  INFO 5176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:41:21.280  INFO 5176 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2420 ms
+2022-07-04 22:41:21.705  WARN 5176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:41:23.354  INFO 5176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:41:23.496  INFO 5176 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.552 seconds (JVM running for 7.064)
+2022-07-04 22:41:30.575  INFO 5176 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:41:30.575  INFO 5176 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:41:30.583  INFO 5176 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-07-04 22:41:34.416  INFO 5176 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:41:34.680  INFO 5176 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:50:34.478  INFO 9128 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 9128 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:50:34.486  INFO 9128 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:50:34.568  INFO 9128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:50:34.568  INFO 9128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:50:35.855  INFO 9128 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:50:37.050  INFO 9128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:50:37.058  INFO 9128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:50:37.058  INFO 9128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:50:37.230  INFO 9128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:50:37.230  INFO 9128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2662 ms
+2022-07-04 22:50:37.646  WARN 9128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:50:39.331  INFO 9128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:50:39.471  INFO 9128 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.731 seconds (JVM running for 6.845)
+2022-07-04 22:50:54.211  INFO 9128 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:50:54.211  INFO 9128 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:50:54.211  INFO 9128 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:50:58.342  INFO 9128 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:50:58.542  INFO 9128 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 22:54:15.936  INFO 6428 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 6428 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:54:15.936  INFO 6428 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:54:16.008  INFO 6428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:54:16.008  INFO 6428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:54:17.240  INFO 6428 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:54:18.288  INFO 6428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:54:18.296  INFO 6428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:54:18.296  INFO 6428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:54:18.465  INFO 6428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:54:18.465  INFO 6428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2457 ms
+2022-07-04 22:54:18.873  WARN 6428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:54:20.753  INFO 6428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:54:20.905  INFO 6428 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 5.753 seconds (JVM running for 7.003)
+2022-07-04 22:55:15.300  INFO 12084 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 12084 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:55:15.308  INFO 12084 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:55:15.399  INFO 12084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:55:15.399  INFO 12084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:55:16.654  INFO 12084 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:55:17.687  INFO 12084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:55:17.703  INFO 12084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:55:17.704  INFO 12084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:55:17.870  INFO 12084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:55:17.870  INFO 12084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2471 ms
+2022-07-04 22:55:18.295  WARN 12084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:55:20.070  INFO 12084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:55:20.203  INFO 12084 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.004 seconds (JVM running for 7.264)
+2022-07-04 22:59:08.970  INFO 10476 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10476 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 22:59:08.970  INFO 10476 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 22:59:09.062  INFO 10476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 22:59:09.062  INFO 10476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 22:59:10.344  INFO 10476 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 22:59:11.369  INFO 10476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 22:59:11.378  INFO 10476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 22:59:11.378  INFO 10476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 22:59:11.536  INFO 10476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 22:59:11.536  INFO 10476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2474 ms
+2022-07-04 22:59:12.043  WARN 10476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-04 22:59:13.761  INFO 10476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 22:59:13.892  INFO 10476 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 6.0 seconds (JVM running for 7.225)
+2022-07-04 22:59:38.742  INFO 10476 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 22:59:38.742  INFO 10476 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 22:59:38.742  INFO 10476 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 22:59:42.639  INFO 10476 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 22:59:42.847  INFO 10476 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен
+2022-07-04 23:09:49.291  INFO 5152 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 5152 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-04 23:09:49.291  INFO 5152 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
+2022-07-04 23:09:49.388  INFO 5152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-04 23:09:49.388  INFO 5152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-04 23:09:51.356  INFO 5152 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6adddea0-47f2-3460-b574-b900d05502cd
+2022-07-04 23:09:58.844  INFO 5152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-07-04 23:09:58.948  INFO 5152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-04 23:09:58.956  INFO 5152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-04 23:09:59.420  INFO 5152 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-04 23:09:59.420  INFO 5152 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10032 ms
+2022-07-04 23:10:01.688  INFO 5152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-04 23:10:05.934  INFO 5152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-07-04 23:10:06.268  INFO 5152 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 17.918 seconds (JVM running for 19.572)
+2022-07-04 23:12:21.486  INFO 5152 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-04 23:12:21.486  INFO 5152 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-04 23:12:21.494  INFO 5152 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-04 23:12:25.961  INFO 5152 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Отправка запроса к сервису акций
+2022-07-04 23:12:27.531  INFO 5152 --- [http-nio-80-exec-7] c.u.controller.ShareController           : Ответ от сервиса акций получен

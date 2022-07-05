@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+
+    <label for="secid">SecId</label>
+    <output name="secid" id="secid" th:text="${share.getSecId()}"></output>
+    <br>
+    <label for="shortName">Сокращенное наименование</label>
+    <output name="shortName" id="shortName" th:text="${share.getShortName()}"></output>
+    <br/>
+    <label for="latName">Латинское наименование</label>
+    <output name="latName" id="latName" th:text="${share.getLatName()}"></output>
+    <br/>
+    <label for="prevPrice">Предварительная стоимость, руб</label>
+    <output name="prevPrice" id="prevPrice" th:text="${share.getPrevPrice()}"></output>
+    <br/>
+    <label for="lotSize">Величина лота</label>
+    <output name="lotSize" id="lotSize" th:text="${share.getLotSize()}"></output>
+    <br/>
+    <label for="lotPrice">Предварительная стоимость лота, руб</label>
+    <output name="lotPrice" id="lotPrice" th:text="${share.getLotPrice()}"></output>
+    <br/>
+    <label for="dividendsInYear">Выплат дивидендов в году</label>
+    <output name="dividendsInYear" id="dividendsInYear" th:text="${share.getDividendsInYear()}"></output>
+    <br/>
+    <br>
+    <output name="message" id="message" th:text="${share.getMessage()}"></output>
+</div>
+
+</body>
+</html>

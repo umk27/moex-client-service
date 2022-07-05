@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: #B5B3B3;
+}
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 0;
+
+    background: #334CA4;
+
+}
+
+.moex {
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+h2 {
+    position: fixed;
+    width: 71.74%;
+    height: 7%;
+    left: 13.53%;
+    top: 2%;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.3em;
+    line-height: 120%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.line1 {
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    background-color: #FFFFFF;
+    top: 13.5%;
+
+}
+
+h3 {
+    position: fixed;
+    width: 80%;
+    height: 6%;
+    left: 10%;
+    top: 15%;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 120%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.line2 {
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    background-color: #FFFFFF;
+    top: 27%;
+}
+
+.shares {
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 23.55%;
+    height: 14.64%;
+    left: 15%;
+    top: 44.24%;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+
+    background: #FF0508;
+    border: 3px solid #000000;
+    border-radius: 15%;
+
+}
+
+.bonds {
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 23.55%;
+    height: 14.64%;
+    left: 61.45%;
+    top: 44.24%;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+
+    background: #FF0508;
+    border: 3px solid #000000;
+    border-radius: 15%;
+
+}
+
+.mes {
+    position: fixed;
+    width: 35%;
+    height: 3%;
+    left: 15%;
+    top: 67%;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7em;
+    text-align: left;
+
+    color: black;
+}
+
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 70%;
+
+    background: #334CA4;
+}
+
+.line3 {
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    background-color: #FFFFFF;
+    top: 73%;
+}
+
