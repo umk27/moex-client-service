@@ -30,7 +30,7 @@ public class ShareService {
     DividendsIncomeCounter dividendsIncomeCounter;
 
 
-    public Share getShare(String secid) {
+    public Share getShare(String str) {
 
         logger.info("Получение списка акций");
 
@@ -40,30 +40,30 @@ public class ShareService {
 
         Share share = null;
         for (Share share1 : shares) {
-            if (share1.getSecId().equals(secid)) {
+            if (share1.getSecId().equals(str) || share1.getShortName().equals(str)) {
                 share = share1;
             }
         }
 
         if (share == null) {
-            logger.error("Акция " + secid + " не найдена на " +
+            logger.error("Акция " + str + " не найдена на " +
                     "Московской бирже");
-            throw new ShareNotFoundException("Акция " + secid + " не найдена на " +
+            throw new ShareNotFoundException("Акция " + str + " не найдена на " +
                     "Московской бирже");
         }
 
-        logger.info("Акция " + secid + " успешно найдена");
+        logger.info("Акция " + str + " успешно найдена");
 
-        logger.info("Получение списка дивидендов акции " + secid);
+        logger.info("Получение списка дивидендов акции " + str);
 
         String dividendsXML = "";
         try {
-            dividendsXML = dividendsClient.getDividends(secid);
+            dividendsXML = dividendsClient.getDividends(share.getSecId());
         } catch (RuntimeException e) {
             logger.error("Мосбиржа не отвечает " +
-                    " на запрос о получении дивидендов акции " + secid);
+                    " на запрос о получении дивидендов акции");
             throw new DividendsLimitsRequestsException("Мосбиржа не отвечает " +
-                    " на запрос о получении дивидендов акции " + secid);
+                    " на запрос о получении дивидендов акции");
         }
 
 
@@ -71,7 +71,7 @@ public class ShareService {
 
         share.setDividendsList(dividendsList);
 
-        logger.info("Список дивидендов акции " + secid + " получен");
+        logger.info("Список дивидендов акции " + str + " получен");
 
         logger.info("Рассчет годового дохода по дивидендам");
 

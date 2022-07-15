@@ -6,6 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
 @RestController
 public class ServiceController {
 
@@ -23,5 +28,22 @@ public class ServiceController {
     @GetMapping("get-bond-service-logs")
     public String getBondServiceLogs(){
         return bondServiceClient.getLogs();
+    }
+
+    @GetMapping("get-main-service-logs")
+    public String getMainServiceLogs(){
+        String logs = "";
+        try (FileReader fileReader = new FileReader("logs/LogFile")) {
+            Scanner scanner = new Scanner(fileReader);
+            while (scanner.hasNextLine()) {
+                logs = logs + scanner.nextLine() + "<br/>";
+            }
+        } catch (FileNotFoundException e) {
+            return "Ошибка получения логов";
+        } catch (IOException e) {
+            return "Ошибка получения логов";
+        }
+
+        return logs;
     }
 }

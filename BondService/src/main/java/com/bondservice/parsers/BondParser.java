@@ -28,20 +28,19 @@ public class BondParser {
 
     Logger logger = LoggerFactory.getLogger(BondParser.class);
 
-    public List<Bond> parse(String strDocument) {
+    public List<Bond> parse(String bondXML) {
 
         List<Bond> bonds = new ArrayList<>();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
         factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
-        Document doc = null;
 
         try {
             factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
             DocumentBuilder builder = factory.newDocumentBuilder();
 
-            try (StringReader reader = new StringReader(strDocument)) {
+            try (StringReader reader = new StringReader(bondXML)) {
                 Document document = builder.parse(new InputSource(reader));
                 document.getDocumentElement().normalize();
                 NodeList list = document.getElementsByTagName("row");

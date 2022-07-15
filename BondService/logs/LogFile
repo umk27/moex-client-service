@@ -1,272 +1,59 @@
-2022-07-01 17:22:16.792  INFO 1444 --- [restartedMain] com.bondservice.BondServiceApplication   : Starting BondServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 1444 (C:\Users\umk27\IdeaProjects\MoexClient\BondService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\BondService)
-2022-07-01 17:22:16.802  INFO 1444 --- [restartedMain] com.bondservice.BondServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-07-01 17:22:16.982  INFO 1444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-01 17:22:16.983  INFO 1444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-01 17:22:19.858  INFO 1444 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51c8668f-ddc5-30cb-a376-93623b72e907
-2022-07-01 17:22:23.194  INFO 1444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-07-01 17:22:23.322  INFO 1444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-01 17:22:23.323  INFO 1444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-01 17:22:24.177  INFO 1444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-01 17:22:24.179  INFO 1444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7194 ms
-2022-07-01 17:22:28.134  WARN 1444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-01 17:22:35.219  INFO 1444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-07-01 17:22:35.430  INFO 1444 --- [restartedMain] com.bondservice.BondServiceApplication   : Started BondServiceApplication in 20.338 seconds (JVM running for 24.14)
-2022-07-01 17:25:15.969  INFO 1444 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-01 17:25:15.969  INFO 1444 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-01 17:25:15.971  INFO 1444 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-01 17:25:16.044  INFO 1444 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:25:16.055 DEBUG 1444 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:25:28.308 DEBUG 1444 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- ERROR UnknownHostException: iss.moex.com (12252ms)
-2022-07-01 17:25:28.310 ERROR 1444 --- [http-nio-8085-exec-1] com.bondservice.services.BondRepository  : Мосбиржа не отвечает на запрос данных о корпоративных облигациях
-2022-07-01 17:25:28.850  INFO 1444 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:25:28.853 DEBUG 1444 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:25:28.855 DEBUG 1444 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- ERROR UnknownHostException: iss.moex.com (0ms)
-2022-07-01 17:25:28.856 ERROR 1444 --- [http-nio-8085-exec-1] com.bondservice.services.BondRepository  : Мосбиржа не отвечает на запрос данных о корпоративных облигациях
-2022-07-01 17:25:29.359  INFO 1444 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:25:29.360 DEBUG 1444 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:25:29.361 DEBUG 1444 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- ERROR UnknownHostException: iss.moex.com (0ms)
-2022-07-01 17:25:29.361 ERROR 1444 --- [http-nio-8085-exec-1] com.bondservice.services.BondRepository  : Мосбиржа не отвечает на запрос данных о корпоративных облигациях
-2022-07-01 17:27:53.476  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:27:53.477 DEBUG 1444 --- [http-nio-8085-exec-3] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:27:53.995 DEBUG 1444 --- [http-nio-8085-exec-3] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- HTTP/1.1 200 OK (515ms)
-2022-07-01 17:28:05.251 DEBUG 1444 --- [http-nio-8085-exec-3] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:28:05.323 DEBUG 1444 --- [http-nio-8085-exec-3] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] <--- HTTP/1.1 200 OK (71ms)
-2022-07-01 17:28:05.878  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:28:05.883  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:28:05.884  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:28:05.887 DEBUG 1444 --- [http-nio-8085-exec-3] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:28:05.962 DEBUG 1444 --- [http-nio-8085-exec-3] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (72ms)
-2022-07-01 17:28:05.972  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:28:05.972  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:28:05.976  INFO 1444 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:31:15.156  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:31:15.158 DEBUG 1444 --- [http-nio-8085-exec-5] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:31:15.396 DEBUG 1444 --- [http-nio-8085-exec-5] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- HTTP/1.1 200 OK (236ms)
-2022-07-01 17:31:29.284 DEBUG 1444 --- [http-nio-8085-exec-5] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:31:29.362 DEBUG 1444 --- [http-nio-8085-exec-5] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] <--- HTTP/1.1 200 OK (77ms)
-2022-07-01 17:31:32.127  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:31:32.131  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:31:32.143  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:31:32.146 DEBUG 1444 --- [http-nio-8085-exec-5] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:31:32.232 DEBUG 1444 --- [http-nio-8085-exec-5] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (84ms)
-2022-07-01 17:31:32.236  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:31:32.236  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:31:32.237  INFO 1444 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:34:52.323  INFO 8160 --- [restartedMain] com.bondservice.BondServiceApplication   : Starting BondServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 8160 (C:\Users\umk27\IdeaProjects\MoexClient\BondService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\BondService)
-2022-07-01 17:34:52.325  INFO 8160 --- [restartedMain] com.bondservice.BondServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-07-01 17:34:52.402  INFO 8160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-01 17:34:52.403  INFO 8160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-01 17:34:53.650  INFO 8160 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51c8668f-ddc5-30cb-a376-93623b72e907
-2022-07-01 17:34:54.815  INFO 8160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-07-01 17:34:54.829  INFO 8160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-01 17:34:54.830  INFO 8160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-01 17:34:54.987  INFO 8160 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-01 17:34:54.988  INFO 8160 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2584 ms
-2022-07-01 17:34:55.489  WARN 8160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-01 17:34:57.247  INFO 8160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-07-01 17:34:57.391  INFO 8160 --- [restartedMain] com.bondservice.BondServiceApplication   : Started BondServiceApplication in 5.992 seconds (JVM running for 7.675)
-2022-07-01 17:35:28.875  INFO 8160 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-01 17:35:28.875  INFO 8160 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-01 17:35:28.877  INFO 8160 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-07-01 17:35:29.357  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:35:29.370 DEBUG 8160 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:35:31.994 DEBUG 8160 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- HTTP/1.1 200 OK (2622ms)
-2022-07-01 17:35:41.590 DEBUG 8160 --- [http-nio-8085-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 17:35:41.670 DEBUG 8160 --- [http-nio-8085-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] <--- HTTP/1.1 200 OK (79ms)
-2022-07-01 17:35:42.148  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:35:42.150  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:35:42.151  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:35:42.153 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:35:42.515 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (361ms)
-2022-07-01 17:35:42.536  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:35:42.536  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:35:42.541  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:36:39.407  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:36:39.414  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:36:39.415  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:36:39.416  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:36:39.417 DEBUG 8160 --- [http-nio-8085-exec-2] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:36:39.601 DEBUG 8160 --- [http-nio-8085-exec-2] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (184ms)
-2022-07-01 17:36:39.625  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:36:39.626  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:36:39.627  INFO 8160 --- [http-nio-8085-exec-2] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:37:18.115  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:37:18.116  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:37:18.117  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:37:18.117  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:37:18.118 DEBUG 8160 --- [http-nio-8085-exec-4] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:37:18.481 DEBUG 8160 --- [http-nio-8085-exec-4] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (362ms)
-2022-07-01 17:37:18.484  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:37:18.485  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:37:18.485  INFO 8160 --- [http-nio-8085-exec-4] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:39:59.462  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:39:59.463  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:39:59.463  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:39:59.464  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:39:59.464 DEBUG 8160 --- [http-nio-8085-exec-6] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:39:59.778 DEBUG 8160 --- [http-nio-8085-exec-6] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (312ms)
-2022-07-01 17:39:59.783  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:39:59.784  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:39:59.784  INFO 8160 --- [http-nio-8085-exec-6] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:40:14.917  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:40:14.919  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:40:14.920  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:40:14.921  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:40:14.922 DEBUG 8160 --- [http-nio-8085-exec-7] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:40:15.218 DEBUG 8160 --- [http-nio-8085-exec-7] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (294ms)
-2022-07-01 17:40:15.221  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:40:15.222  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:40:15.223  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:43:25.655  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:43:25.656  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:43:25.657  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:43:25.657  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:43:25.658 DEBUG 8160 --- [http-nio-8085-exec-9] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:43:25.935 DEBUG 8160 --- [http-nio-8085-exec-9] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (276ms)
-2022-07-01 17:43:25.973  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:43:25.973  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:43:25.974  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:45:15.787  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:45:15.788  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:45:15.788  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:45:15.789  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:45:15.790 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:45:16.046 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (255ms)
-2022-07-01 17:45:16.050  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:45:16.050  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:45:16.050  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:46:55.646  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:46:55.647  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:46:55.648  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:46:55.648  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:46:55.650 DEBUG 8160 --- [http-nio-8085-exec-3] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:46:55.902 DEBUG 8160 --- [http-nio-8085-exec-3] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (251ms)
-2022-07-01 17:46:55.905  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:46:55.905  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:46:55.905  INFO 8160 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:49:42.364  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:49:42.365  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:49:42.366  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:49:42.366  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:49:42.367 DEBUG 8160 --- [http-nio-8085-exec-5] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:49:42.612 DEBUG 8160 --- [http-nio-8085-exec-5] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (244ms)
-2022-07-01 17:49:42.631  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:49:42.631  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:49:42.632  INFO 8160 --- [http-nio-8085-exec-5] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 17:52:09.203  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 17:52:09.204  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 17:52:09.204  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 17:52:09.204  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 17:52:09.205 DEBUG 8160 --- [http-nio-8085-exec-7] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 17:52:09.509 DEBUG 8160 --- [http-nio-8085-exec-7] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (304ms)
-2022-07-01 17:52:09.512  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 17:52:09.513  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 17:52:09.513  INFO 8160 --- [http-nio-8085-exec-7] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 18:13:05.856  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 18:13:05.858  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 18:13:05.861 ERROR 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Облигация RU000A100TF не найдена на Московской бирже
-2022-07-01 18:13:06.389  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 18:13:06.391  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 18:13:06.393 ERROR 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Облигация RU000A100TF не найдена на Московской бирже
-2022-07-01 18:13:06.900  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 18:13:06.902  INFO 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 18:13:06.905 ERROR 8160 --- [http-nio-8085-exec-9] com.bondservice.services.BondService     : Облигация RU000A100TF не найдена на Московской бирже
-2022-07-01 18:18:39.459  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 18:18:39.459  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 18:18:39.460  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Облигация SU26212RMFS9 успешно найдена
-2022-07-01 18:18:39.460  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации SU26212RMFS9
-2022-07-01 18:18:39.461 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/SU26212RMFS9/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 18:18:49.638 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- ERROR SocketTimeoutException: Connect timed out (10176ms)
-2022-07-01 18:18:49.640 ERROR 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Мосбиржа не отвечает на запрос о получении данных о купонах облигации SU26212RMFS9
-2022-07-01 18:18:50.149  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 18:18:50.151  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 18:18:50.153  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Облигация SU26212RMFS9 успешно найдена
-2022-07-01 18:18:50.153  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации SU26212RMFS9
-2022-07-01 18:18:50.155 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/SU26212RMFS9/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 18:18:59.542 DEBUG 8160 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (9386ms)
-2022-07-01 18:19:00.007  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список купонов облигации SU26212RMFS9 получен
-2022-07-01 18:19:00.007  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 18:19:00.008  INFO 8160 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 18:24:41.427  INFO 824 --- [restartedMain] com.bondservice.BondServiceApplication   : Starting BondServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 824 (C:\Users\umk27\IdeaProjects\MoexClient\BondService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\BondService)
-2022-07-01 18:24:41.430  INFO 824 --- [restartedMain] com.bondservice.BondServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-07-01 18:24:41.512  INFO 824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-01 18:24:41.513  INFO 824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-01 18:24:42.832  INFO 824 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=51c8668f-ddc5-30cb-a376-93623b72e907
-2022-07-01 18:24:44.033  INFO 824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-07-01 18:24:44.046  INFO 824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-01 18:24:44.047  INFO 824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-01 18:24:44.206  INFO 824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-01 18:24:44.206  INFO 824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2692 ms
-2022-07-01 18:24:44.678  WARN 824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-01 18:24:46.447  INFO 824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-07-01 18:24:46.588  INFO 824 --- [restartedMain] com.bondservice.BondServiceApplication   : Started BondServiceApplication in 6.133 seconds (JVM running for 7.846)
-2022-07-01 18:25:38.048  INFO 824 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-01 18:25:38.049  INFO 824 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-01 18:25:38.052  INFO 824 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-01 18:25:38.119  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 18:25:38.130 DEBUG 824 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 18:25:38.695 DEBUG 824 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- HTTP/1.1 200 OK (559ms)
-2022-07-01 18:25:41.139 DEBUG 824 --- [http-nio-8085-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 18:25:41.227 DEBUG 824 --- [http-nio-8085-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] <--- HTTP/1.1 200 OK (84ms)
-2022-07-01 18:25:41.524  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 18:25:41.527  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Облигация SU26230RMFS1 успешно найдена
-2022-07-01 18:25:41.527  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации SU26230RMFS1
-2022-07-01 18:25:41.529 DEBUG 824 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/SU26230RMFS1/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 18:25:41.846 DEBUG 824 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (316ms)
-2022-07-01 18:25:41.976  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список купонов облигации SU26230RMFS1 получен
-2022-07-01 18:25:41.979  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 18:25:41.984  INFO 824 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 18:39:26.262  INFO 7896 --- [restartedMain] com.bondservice.BondServiceApplication   : Starting BondServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 7896 (C:\Users\umk27\IdeaProjects\MoexClient\BondService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\BondService)
-2022-07-01 18:39:26.265  INFO 7896 --- [restartedMain] com.bondservice.BondServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-07-01 18:39:26.414  INFO 7896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-01 18:39:26.414  INFO 7896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-01 18:39:28.821  INFO 7896 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80790fec-f78c-3f7e-ab5c-b45aa4c97713
-2022-07-01 18:39:30.755  INFO 7896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-07-01 18:39:30.770  INFO 7896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-01 18:39:30.771  INFO 7896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-01 18:39:30.940  INFO 7896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-01 18:39:30.941  INFO 7896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4526 ms
-2022-07-01 18:39:31.624  INFO 7896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-01 18:39:34.121  INFO 7896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-07-01 18:39:34.302  INFO 7896 --- [restartedMain] com.bondservice.BondServiceApplication   : Started BondServiceApplication in 9.412 seconds (JVM running for 13.044)
-2022-07-01 18:42:59.780  INFO 7896 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-01 18:42:59.780  INFO 7896 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-01 18:42:59.783  INFO 7896 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-01 19:48:57.395  INFO 2956 --- [restartedMain] com.bondservice.BondServiceApplication   : Starting BondServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 2956 (C:\Users\umk27\IdeaProjects\MoexClient\BondService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\BondService)
-2022-07-01 19:48:57.398  INFO 2956 --- [restartedMain] com.bondservice.BondServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-07-01 19:48:57.502  INFO 2956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-01 19:48:57.502  INFO 2956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-01 19:48:59.171  INFO 2956 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80790fec-f78c-3f7e-ab5c-b45aa4c97713
-2022-07-01 19:49:00.637  INFO 2956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-07-01 19:49:00.651  INFO 2956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-01 19:49:00.652  INFO 2956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-01 19:49:00.842  INFO 2956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-01 19:49:00.842  INFO 2956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3339 ms
-2022-07-01 19:49:01.448  WARN 2956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-01 19:49:03.644  INFO 2956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-07-01 19:49:03.785  INFO 2956 --- [restartedMain] com.bondservice.BondServiceApplication   : Started BondServiceApplication in 7.517 seconds (JVM running for 10.141)
-2022-07-01 19:51:36.031  INFO 2956 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-01 19:51:36.032  INFO 2956 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-01 19:51:36.034  INFO 2956 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-01 19:51:36.102  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 19:51:36.113 DEBUG 2956 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 19:51:36.661 DEBUG 2956 --- [http-nio-8085-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- HTTP/1.1 200 OK (546ms)
-2022-07-01 19:51:43.796 DEBUG 2956 --- [http-nio-8085-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
-2022-07-01 19:51:43.882 DEBUG 2956 --- [http-nio-8085-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] <--- HTTP/1.1 200 OK (84ms)
-2022-07-01 19:51:44.293  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 19:51:44.296  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
-2022-07-01 19:51:44.296  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
-2022-07-01 19:51:44.298 DEBUG 2956 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 19:51:44.376 DEBUG 2956 --- [http-nio-8085-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (76ms)
-2022-07-01 19:51:44.383  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
-2022-07-01 19:51:44.383  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 19:51:44.386  INFO 2956 --- [http-nio-8085-exec-1] com.bondservice.services.BondService     : Купонный доход рассчитан
-2022-07-01 19:53:46.499  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Получение списка облигаций
-2022-07-01 19:53:46.502  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Список облигаций успешно получен
-2022-07-01 19:53:46.503  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Облигация SU26230RMFS1 успешно найдена
-2022-07-01 19:53:46.503  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Получение списка купонов облигации SU26230RMFS1
-2022-07-01 19:53:46.504 DEBUG 2956 --- [http-nio-8085-exec-3] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/SU26230RMFS1/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
-2022-07-01 19:53:48.428 DEBUG 2956 --- [http-nio-8085-exec-3] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (1923ms)
-2022-07-01 19:53:48.486  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Список купонов облигации SU26230RMFS1 получен
-2022-07-01 19:53:48.487  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Рассчет купонного дохода
-2022-07-01 19:53:48.489  INFO 2956 --- [http-nio-8085-exec-3] com.bondservice.services.BondService     : Купонный доход рассчитан
+2022-07-15 21:34:34.180  INFO 8084 --- [restartedMain] com.bondservice.BondServiceApplication   : Starting BondServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 8084 (C:\Users\umk27\IdeaProjects\MoexClient\BondService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\BondService)
+2022-07-15 21:34:34.190  INFO 8084 --- [restartedMain] com.bondservice.BondServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 21:34:34.344  INFO 8084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 21:34:34.344  INFO 8084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 21:34:36.200  INFO 8084 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c176c40a-eea6-3e35-b74e-ea7994a704ff
+2022-07-15 21:34:37.822  INFO 8084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-07-15 21:34:37.836  INFO 8084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 21:34:37.837  INFO 8084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-15 21:34:38.044  INFO 8084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 21:34:38.045  INFO 8084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3699 ms
+2022-07-15 21:34:38.644  WARN 8084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-15 21:34:41.244  INFO 8084 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-15 21:34:41.697  INFO 8084 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-15 21:34:41.759  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-15 21:34:41.768  INFO 8084 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-15 21:34:41.803  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-15 21:34:41.804  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-15 21:34:41.804  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-15 21:34:41.804  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-15 21:34:41.804  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-15 21:34:41.804  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-15 21:34:41.804  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-15 21:34:42.238  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-15 21:34:42.246  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-15 21:34:42.255  INFO 8084 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-15 21:34:42.272  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657910082271 with initial instances count: 1
+2022-07-15 21:34:42.293  INFO 8084 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BOND-SERVICE with eureka with status UP
+2022-07-15 21:34:42.294  INFO 8084 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657910082294, current=UP, previous=STARTING]
+2022-07-15 21:34:42.300  INFO 8084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOND-SERVICE/host.docker.internal:BOND-SERVICE:8083: registering service...
+2022-07-15 21:34:42.333  INFO 8084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-07-15 21:34:42.335  INFO 8084 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2022-07-15 21:34:42.367  INFO 8084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOND-SERVICE/host.docker.internal:BOND-SERVICE:8083 - registration status: 204
+2022-07-15 21:34:42.497  INFO 8084 --- [restartedMain] com.bondservice.BondServiceApplication   : Started BondServiceApplication in 9.579 seconds (JVM running for 12.032)
+2022-07-15 21:35:59.211  INFO 8084 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 21:35:59.211  INFO 8084 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 21:35:59.217  INFO 8084 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-15 21:35:59.301  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Получение списка облигаций
+2022-07-15 21:35:59.309 DEBUG 8084 --- [http-nio-8083-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
+2022-07-15 21:35:59.791 DEBUG 8084 --- [http-nio-8083-exec-1] c.b.moexclient.CorporateBondClient       : [CorporateBondClient#getCorporateBonds] <--- HTTP/1.1 200 OK (481ms)
+2022-07-15 21:36:01.341 DEBUG 8084 --- [http-nio-8083-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] ---> GET https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.xml?iss.meta=off&iss.only=securities HTTP/1.1
+2022-07-15 21:36:01.396 DEBUG 8084 --- [http-nio-8083-exec-1] c.b.moexclient.GovernmentBondClient      : [GovernmentBondClient#getGovernmentBonds] <--- HTTP/1.1 200 OK (54ms)
+2022-07-15 21:36:01.771  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Список облигаций успешно получен
+2022-07-15 21:36:01.773  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Облигация RU000A100TF3 успешно найдена
+2022-07-15 21:36:01.774  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Получение списка купонов облигации RU000A100TF3
+2022-07-15 21:36:01.776 DEBUG 8084 --- [http-nio-8083-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] ---> GET https://iss.moex.com/iss/securities/RU000A100TF3/bondization.xml?iss.meta=off&iss.only=coupons&start=0&limit=100 HTTP/1.1
+2022-07-15 21:36:01.844 DEBUG 8084 --- [http-nio-8083-exec-1] com.bondservice.moexclient.CouponClient  : [CouponClient#getCoupons] <--- HTTP/1.1 200 OK (66ms)
+2022-07-15 21:36:01.854  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Список купонов облигации RU000A100TF3 получен
+2022-07-15 21:36:01.854  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Рассчет купонного дохода
+2022-07-15 21:36:01.855  INFO 8084 --- [http-nio-8083-exec-1] com.bondservice.services.BondService     : Купонный доход рассчитан
+2022-07-15 21:39:41.815  INFO 8084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-15 21:44:41.820  INFO 8084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-15 21:46:25.471  INFO 8084 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BOND-SERVICE with eureka with status DOWN
+2022-07-15 21:46:25.472  INFO 8084 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657910785472, current=DOWN, previous=UP]
+2022-07-15 21:46:25.479  INFO 8084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOND-SERVICE/host.docker.internal:BOND-SERVICE:8083: registering service...
+2022-07-15 21:46:25.539  INFO 8084 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOND-SERVICE/host.docker.internal:BOND-SERVICE:8083 - registration status: 204
+2022-07-15 21:46:26.231  INFO 8084 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-15 21:46:29.270  INFO 8084 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-15 21:46:29.293  INFO 8084 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOND-SERVICE/host.docker.internal:BOND-SERVICE:8083 - deregister  status: 200
+2022-07-15 21:46:29.427  INFO 8084 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

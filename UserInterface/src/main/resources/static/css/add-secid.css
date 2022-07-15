@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
@@ -28,16 +28,15 @@ header {
 
 h3 {
     position: fixed;
-    width: 76%;
     height: 6%;
-    left: 12%;
-    top: 4%;
+    left: 17%;
+    top: 7%;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
-    text-align: center;
+    font-size: 1.1em;
+    text-align: left;
 
     color: #FFFFFF;
 }
@@ -98,6 +97,12 @@ label {
     border-radius: 15%;
 
     color: #FFFFFF;
+}
+
+.but:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #FF0508;
 }
 
 p {

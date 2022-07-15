@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=yes, width-device-width, initial-scale=1.0,
 maximum-scale=1.0">
-    <title>Title</title>
+    <title>AddShareSecId</title>
     <link th:href="@{/css/add-secid.css}" rel="stylesheet">
 </head>
 <body>
 <header>
     <a href="/"><img class="moex" th:src="@{/images/moex-logo.svg}"/></a>
-    <h3>Введите SecId, либо сокращенное наименование акции.
+    <h3>Введите идентификатор, либо сокращенное наименование акции.
         Например: "GAZP", либо "ГАЗПРОМ ао"</h3>
     <hr class="line1"/>
 </header>
 
-<form method="GET" action="/get-share-info">
+<form method="GET" action="/get-share-info" target="_blank">
 
     <label for="secid/shortname">SecId/ShortName</label>
     <input name="secid/shortname" type="text" id="secid/shortname"/>

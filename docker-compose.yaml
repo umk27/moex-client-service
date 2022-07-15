@@ -1,0 +1,45 @@
+version: '3.7'
+
+services:
+  share-service:
+    image: umk27/moex-client-share-service:latest
+    ports:
+      - "8081:8081"
+    networks:
+      - moex-client-network
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_HOST=http://eureka-server:8761/eureka/
+
+  bond-service:
+    image: umk27/moex-client-bond-service:latest
+    ports:
+      - "8083:8083"
+    networks:
+      - moex-client-network
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_HOST=http://eureka-server:8761/eureka/
+
+  user-interface:
+    image: umk27/moex-client-user-interface:latest
+    ports:
+      - "443:443"
+    networks:
+      - moex-client-network
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_HOST=http://eureka-server:8761/eureka/
+
+  eureka-server:
+    image: umk27/moex-client-eureka-server:latest
+    ports:
+      - "8761:8761"
+    networks:
+      - moex-client-network
+
+networks:
+  moex-client-network:

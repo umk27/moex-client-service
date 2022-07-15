@@ -2,26 +2,40 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="user-scalable=yes, width-device-width, initial-scale=1.0,
+maximum-scale=1.0">
+    <title>BondInfo</title>
+    <link th:href="@{/css/show-info-message.css}" rel="stylesheet">
 </head>
 <body>
 
-<div>
+<header>
+    <a href="/"><img class="moex" th:src="@{/images/moex-logo.svg}"/></a>
+    <h3>
+        <label class="head" for="shortName">Информация об облигации</label>
+        <output class="head" name="shortName" id="shortName" th:text="${bond.getShortName()}"></output>
+    </h3>
+    <hr class="line1"/>
+</header>
+
+<div class="info">
     <label for="secid">SecId</label>
     <output name="secid" id="secid" th:text="${bond.getSecId()}"></output>
-    <br>
+    <br/>
     <label for="shortName">Сокращенное наименование</label>
     <output name="shortName" id="shortName" th:text="${bond.getShortName()}"></output>
-    <br>
+    <br/>
     <label for="latName">Латинское наименование</label>
     <output name="latName" id="latName" th:text="${bond.getLatName()}"></output>
-    <br>
+    <br/>
     <label for="prevPrice">Предварительная стоимость, руб</label>
     <output name="prevPrice" id="prevPrice" th:text="${bond.getPrevPrice()}"></output>
-    <br>
-    <br>
-    <output name="message" id="message" th:text="${bond.getMessage()}"></output>
+    <br/>
+    <br/>
+    <output class="mes" name="message" id="message" th:text="${bond.getMessage()}"></output>
 </div>
+
+<hr class="line2"/>
 
 </body>
 </html>

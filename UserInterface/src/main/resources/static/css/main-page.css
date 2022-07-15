@@ -63,7 +63,7 @@ h3 {
     width: 80%;
     height: 6%;
     left: 10%;
-    top: 15%;
+    top: 17%;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -90,7 +90,7 @@ h3 {
     width: 23.55%;
     height: 14.64%;
     left: 15%;
-    top: 44.24%;
+    top: 40%;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -110,7 +110,7 @@ h3 {
     width: 23.55%;
     height: 14.64%;
     left: 61.45%;
-    top: 44.24%;
+    top: 40%;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -123,17 +123,22 @@ h3 {
 
 }
 
+.shares:hover, .bonds:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #FF0508;
+}
+
 .mes {
     position: fixed;
-    width: 35%;
     height: 3%;
-    left: 15%;
-    top: 67%;
+    left: 25%;
+    top: 62%;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.7em;
+    font-size: 1.1em;
     text-align: left;
 
     color: black;
@@ -157,4 +162,24 @@ footer {
     background-color: #FFFFFF;
     top: 73%;
 }
+
+.contacts{
+    position: fixed;
+    top: 76%;
+    left: 5%;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
 

@@ -30,7 +30,7 @@ public class BondService {
     @Autowired
     private CouponIncomeCounter couponIncomeCounter;
 
-    public Bond getBond(String secid) {
+    public Bond getBond(String str) {
 
         logger.info("Получение списка облигаций");
 
@@ -40,37 +40,37 @@ public class BondService {
 
         Bond bond = null;
         for (Bond bond1 : bonds) {
-            if (bond1.getSecId().equals(secid)) {
+            if (bond1.getSecId().equals(str) || bond1.getShortName().equals(str)) {
                 bond = bond1;
             }
         }
 
         if (bond == null) {
-            logger.error("Облигация " + secid + " не найдена на " +
+            logger.error("Облигация " + str + " не найдена на " +
                     "Московской бирже");
-            throw new BondNotFoundException("Облигация " + secid + " не найдена на " +
+            throw new BondNotFoundException("Облигация " + str + " не найдена на " +
                     "Московской бирже");
         }
 
-        logger.info("Облигация " + secid + " успешно найдена");
+        logger.info("Облигация " + str + " успешно найдена");
 
-        logger.info("Получение списка купонов облигации " + secid);
+        logger.info("Получение списка купонов облигации " + str);
 
-        String couponXML="";
+        String couponXML = "";
         try {
-            couponXML = couponClient.getCoupons(secid);
-        } catch (RuntimeException e){
+            couponXML = couponClient.getCoupons(bond.getSecId());
+        } catch (RuntimeException e) {
             logger.error("Мосбиржа не отвечает " +
-                    "на запрос о получении данных о купонах облигации " + secid);
+                    "на запрос о получении данных о купонах облигации");
             throw new CouponLimitRequestsException("Мосбиржа не отвечает " +
-                    "на запрос о получении данных о купонах облигации " + secid);
+                    "на запрос о получении данных о купонах облигации");
         }
 
 
         List<Bond.Coupon> coupons = couponParser.parse(couponXML);
 
         bond.setCoupons(coupons);
-        logger.info("Список купонов облигации " + secid + " получен");
+        logger.info("Список купонов облигации " + str + " получен");
 
         logger.info("Рассчет купонного дохода");
         Bond bondResult = couponIncomeCounter.countCouponIncome(bond);

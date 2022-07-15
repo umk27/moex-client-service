@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "bondServiceClient", url = "http://localhost:8085",
+@FeignClient(name= "BOND-SERVICE",
         configuration = FeignConfig.class)
 public interface BondServiceClient {
 

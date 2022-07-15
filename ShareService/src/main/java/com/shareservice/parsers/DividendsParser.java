@@ -48,12 +48,6 @@ public class DividendsParser {
 
                 NodeList list = document.getElementsByTagName("row");
 
-               /* if(list.getLength()==0){
-                    Share.Dividends dividends = new Share.Dividends();
-                    dividends.setMessage("По акции не выплачиваются дивиденды");
-                    dividendsList.add(dividends);
-                }*/
-
 
                 for (int i = 0; i < list.getLength(); i++) {
                     Element element = (Element) list.item(i);

@@ -16,7 +16,7 @@ public class GetLogsService {
         try (FileReader fileReader = new FileReader("logs/LogFile")) {
             Scanner scanner = new Scanner(fileReader);
             while (scanner.hasNextLine()) {
-                logs = logs + scanner.nextLine() + "<br>";
+                logs = logs + scanner.nextLine() + "<br/>";
             }
         } catch (FileNotFoundException e) {
             throw new GetLogsException("Ошибка получения логов");

@@ -33,20 +33,19 @@ public class CouponParser {
     @Autowired
     private DateBuilder dateBuilder;
 
-    public List<Bond.Coupon> parse(String strDocument) {
+    public List<Bond.Coupon> parse(String couponXML) {
 
         List<Bond.Coupon> coupons = new ArrayList<>();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
         factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
-        Document doc = null;
 
         try {
             factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
             DocumentBuilder builder = factory.newDocumentBuilder();
 
-            try (StringReader reader = new StringReader(strDocument)) {
+            try (StringReader reader = new StringReader(couponXML)) {
                 Document document = builder.parse(new InputSource(reader));
                 document.getDocumentElement().normalize();
 

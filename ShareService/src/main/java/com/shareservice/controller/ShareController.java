@@ -23,15 +23,8 @@ public class ShareController {
     @GetMapping("getShare/secid/{secid}")
     @Retry(name = "share-exception", fallbackMethod = "shareEx")
     public Share getShare(@PathVariable String secid) {
-        // LKOH
-        // YNDX
-        // GAZP
 
-        Share share = shareService.getShare(secid);
-
-        // shareService.getDividends("LKOH");
-
-        return share;
+        return shareService.getShare(secid);
     }
 
     @GetMapping("getLogs")
@@ -43,7 +36,7 @@ public class ShareController {
     public Share shareEx(String secid, ShareNotFoundException exception) {
         Share share = new Share();
         share.setError("Акция " + secid + " не найдена на " +
-                "Московской бирже");
+                "Московской бирже. Проверьте правильность ввода SecId/ShortName");
         return share;
     }
 

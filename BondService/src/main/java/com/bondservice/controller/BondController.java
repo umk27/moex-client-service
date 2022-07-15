@@ -8,7 +8,6 @@ import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -25,14 +24,6 @@ public class BondController {
     @Retry(name = "bond-exception", fallbackMethod = "bondEx")
     public Bond getBond(@PathVariable String secid) {
 
-        /* return couponService.getCoupons("RU000A103935");*/
-
-        /* return bondService.getBond("SU26227RMFS7")*/
-        ;
-        /*return bondService.getBond("RU000A100TF3");*/
-
-        /*return bondService.getBond("RU000A103YM3");*/
-
         return bondService.getBond(secid);
     }
 
@@ -44,7 +35,8 @@ public class BondController {
 
     public Bond bondEx(String secid, BondNotFoundException exception) {
         Bond bond = new Bond();
-        bond.setError("Облигация " + secid + " не найдена на Московской бирже");
+        bond.setError("Облигация " + secid + " не найдена на Московской бирже. " +
+                "Проверьте правильность ввода SecId/ShortName");
         return bond;
     }
 
@@ -76,8 +68,8 @@ public class BondController {
 
     public Bond bondEx(String secid, CouponLimitRequestsException exception) {
         Bond bond = new Bond();
-        bond.setError("\"Мосбиржа не отвечает " +
-                "на запрос о получении данных о купонах облигации " + secid);
+        bond.setError("Мосбиржа не отвечает " +
+                "на запрос о получении данных о купонах облигации");
         return bond;
     }
 

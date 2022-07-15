@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="user-scalable=yes, width-device-width, initial-scale=1.0,
+maximum-scale=1.0">
+    <title>ShareInfo</title>
+    <link th:href="@{/css/show-info-message.css}" rel="stylesheet">
 </head>
 <body>
 
-<div>
+<header>
+    <a href="/"><img class="moex" th:src="@{/images/moex-logo.svg}"/></a>
+    <h3>
+        <label class="head" for="shortName">Информация об акции</label>
+        <output class="head" name="shortName" id="shortName" th:text="${share.getShortName()}"></output>
+    </h3>
+    <hr class="line1"/>
+</header>
+
+<div class="info">
 
     <label for="secid">SecId</label>
     <output name="secid" id="secid" th:text="${share.getSecId()}"></output>
@@ -29,9 +41,11 @@
     <label for="dividendsInYear">Выплат дивидендов в году</label>
     <output name="dividendsInYear" id="dividendsInYear" th:text="${share.getDividendsInYear()}"></output>
     <br/>
-    <br>
-    <output name="message" id="message" th:text="${share.getMessage()}"></output>
+    <br/>
+    <output class="mes" name="message" id="message" th:text="${share.getMessage()}"></output>
 </div>
+
+<hr class="line2"/>
 
 </body>
 </html>

@@ -2,15 +2,24 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="user-scalable=yes, width-device-width, initial-scale=1.0,
+maximum-scale=1.0">
+    <title>Error</title>
+    <link th:href="@{/css/show-info-error.css}" rel="stylesheet">
 </head>
 <body>
 
-<div>
-    <label for="error">Ошибка:</label>
+<a href="/"><img class="moex" th:src="@{/images/moex-logo.svg}"/></a>
+
+<hr class="line1"/>
+
+<div class="error">
+    <label for="error">Ошибка!</label>
     <output name="error" id="error" th:text="${bond.getError()}"></output>
 
 </div>
+
+<hr class="line2"/>
 
 </body>
 </html>
