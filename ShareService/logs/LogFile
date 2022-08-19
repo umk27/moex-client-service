@@ -1,57 +1,276 @@
-2022-07-15 21:34:30.107  INFO 1064 --- [restartedMain] c.shareservice.ShareServiceApplication   : Starting ShareServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 1064 (C:\Users\umk27\IdeaProjects\MoexClient\ShareService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\ShareService)
-2022-07-15 21:34:30.140  INFO 1064 --- [restartedMain] c.shareservice.ShareServiceApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-07-15 21:34:30.345  INFO 1064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-15 21:34:30.346  INFO 1064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-15 21:34:33.786  INFO 1064 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4672a5c8-b4cd-3d60-b251-2d1707dd294a
-2022-07-15 21:34:35.584  INFO 1064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2022-07-15 21:34:35.605  INFO 1064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-15 21:34:35.606  INFO 1064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-15 21:34:35.826  INFO 1064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-15 21:34:35.827  INFO 1064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5479 ms
-2022-07-15 21:34:36.716  WARN 1064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-15 21:34:39.233  INFO 1064 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-07-15 21:34:39.776  INFO 1064 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-15 21:34:39.851  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-15 21:34:39.858  INFO 1064 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:34:39.898  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-15 21:34:39.899  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-15 21:34:39.900  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-15 21:34:39.900  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-15 21:34:39.900  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-15 21:34:39.900  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-15 21:34:39.900  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-15 21:34:40.560  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-15 21:34:40.572  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-15 21:34:40.592  INFO 1064 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-15 21:34:40.618  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657910080615 with initial instances count: 1
-2022-07-15 21:34:40.650  INFO 1064 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SHARE-SERVICE with eureka with status UP
-2022-07-15 21:34:40.651  INFO 1064 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657910080651, current=UP, previous=STARTING]
-2022-07-15 21:34:40.655  INFO 1064 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
-2022-07-15 21:34:40.713  INFO 1064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2022-07-15 21:34:40.715  INFO 1064 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
-2022-07-15 21:34:40.760  INFO 1064 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
-2022-07-15 21:34:40.962  INFO 1064 --- [restartedMain] c.shareservice.ShareServiceApplication   : Started ShareServiceApplication in 12.221 seconds (JVM running for 16.068)
-2022-07-15 21:39:39.944  INFO 1064 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:42:03.716  INFO 1064 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-15 21:42:03.717  INFO 1064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-15 21:42:03.719  INFO 1064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-15 21:42:03.812  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка акций
-2022-07-15 21:42:03.823 DEBUG 1064 --- [http-nio-8081-exec-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] ---> GET https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.xml?iss.only=securities&iss.meta=off HTTP/1.1
-2022-07-15 21:42:04.497 DEBUG 1064 --- [http-nio-8081-exec-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] <--- HTTP/1.1 200 OK (672ms)
-2022-07-15 21:42:04.730  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список акций получен
-2022-07-15 21:42:04.734  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Акция ЛУКОЙЛ успешно найдена
-2022-07-15 21:42:04.735  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка дивидендов акции ЛУКОЙЛ
-2022-07-15 21:42:04.737 DEBUG 1064 --- [http-nio-8081-exec-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/LKOH/dividends.xml?iss.meta=off HTTP/1.1
-2022-07-15 21:42:04.806 DEBUG 1064 --- [http-nio-8081-exec-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (67ms)
-2022-07-15 21:42:04.818  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список дивидендов акции ЛУКОЙЛ получен
-2022-07-15 21:42:04.818  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
-2022-07-15 21:42:04.819  INFO 1064 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
-2022-07-15 21:44:39.955  INFO 1064 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:46:30.782  INFO 1064 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SHARE-SERVICE with eureka with status DOWN
-2022-07-15 21:46:30.785  INFO 1064 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657910790785, current=DOWN, previous=UP]
-2022-07-15 21:46:30.786  INFO 1064 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
-2022-07-15 21:46:30.795  INFO 1064 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
-2022-07-15 21:46:30.902  INFO 1064 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2022-07-15 21:46:33.938  INFO 1064 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2022-07-15 21:46:33.947  INFO 1064 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - deregister  status: 200
-2022-07-15 21:46:34.099  INFO 1064 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-16 07:38:17.385  INFO 2240 --- [restartedMain] c.shareservice.ShareServiceApplication   : Starting ShareServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 2240 (C:\Users\umk27\IdeaProjects\MoexClient\ShareService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\ShareService)
+2022-07-16 07:38:17.394  INFO 2240 --- [restartedMain] c.shareservice.ShareServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 07:38:17.505  INFO 2240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-16 07:38:17.506  INFO 2240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-16 07:38:19.074  INFO 2240 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4672a5c8-b4cd-3d60-b251-2d1707dd294a
+2022-07-16 07:38:20.519  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-16 07:38:20.532  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 07:38:20.533  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-16 07:38:20.750  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-16 07:38:20.751  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3243 ms
+2022-07-16 07:38:21.292  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 07:38:23.567  INFO 2240 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-16 07:38:24.067  INFO 2240 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-16 07:38:24.133  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-16 07:38:24.143  INFO 2240 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-16 07:38:24.191  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 07:38:24.191  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 07:38:24.192  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 07:38:24.192  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 07:38:24.192  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 07:38:24.192  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-16 07:38:24.192  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 07:38:24.876  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 07:38:24.884  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-16 07:38:24.894  INFO 2240 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-16 07:38:24.914  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657946304912 with initial instances count: 0
+2022-07-16 07:38:24.938  INFO 2240 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SHARE-SERVICE with eureka with status UP
+2022-07-16 07:38:24.939  INFO 2240 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657946304939, current=UP, previous=STARTING]
+2022-07-16 07:38:24.941  INFO 2240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 07:38:24.985  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-16 07:38:24.987  INFO 2240 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2022-07-16 07:38:25.124  INFO 2240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 07:38:25.239  INFO 2240 --- [restartedMain] c.shareservice.ShareServiceApplication   : Started ShareServiceApplication in 8.93 seconds (JVM running for 11.495)
+2022-07-16 07:38:35.510  INFO 2240 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-16 07:38:35.510  INFO 2240 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-16 07:38:35.513  INFO 2240 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-16 07:38:54.894  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 07:38:54.894  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 07:38:54.894  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 07:38:54.894  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 07:38:54.895  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 07:38:54.895  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-07-16 07:38:54.895  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 07:38:54.910  INFO 2240 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 07:40:19.402  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:40:19.425 DEBUG 2240 --- [http-nio-8081-exec-5] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] ---> GET https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.xml?iss.only=securities&iss.meta=off HTTP/1.1
+2022-07-16 07:40:20.007 DEBUG 2240 --- [http-nio-8081-exec-5] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] <--- HTTP/1.1 200 OK (580ms)
+2022-07-16 07:40:20.338  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:40:20.341  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Акция LKOH успешно найдена
+2022-07-16 07:40:20.342  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Получение списка дивидендов акции LKOH
+2022-07-16 07:40:20.346 DEBUG 2240 --- [http-nio-8081-exec-5] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/LKOH/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 07:40:20.405 DEBUG 2240 --- [http-nio-8081-exec-5] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (57ms)
+2022-07-16 07:40:20.413  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Список дивидендов акции LKOH получен
+2022-07-16 07:40:20.414  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 07:40:20.415  INFO 2240 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 07:40:38.904  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:40:38.921  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:40:38.922  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Акция YNDX успешно найдена
+2022-07-16 07:40:38.922  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Получение списка дивидендов акции YNDX
+2022-07-16 07:40:38.924 DEBUG 2240 --- [http-nio-8081-exec-8] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/YNDX/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 07:40:39.001 DEBUG 2240 --- [http-nio-8081-exec-8] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (76ms)
+2022-07-16 07:40:39.004  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Список дивидендов акции YNDX получен
+2022-07-16 07:40:39.005  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 07:40:39.005  INFO 2240 --- [http-nio-8081-exec-8] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 07:41:11.822  INFO 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:11.823  INFO 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:11.824 ERROR 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Акция Газпром ао не найдена на Московской бирже
+2022-07-16 07:41:12.362  INFO 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:12.363  INFO 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:12.364 ERROR 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Акция Газпром ао не найдена на Московской бирже
+2022-07-16 07:41:12.880  INFO 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:12.881  INFO 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:12.881 ERROR 2240 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Акция Газпром ао не найдена на Московской бирже
+2022-07-16 07:41:34.320  INFO 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:34.322  INFO 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:34.324 ERROR 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Акция Газпром ао не найдена на Московской бирже
+2022-07-16 07:41:34.830  INFO 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:34.831  INFO 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:34.831 ERROR 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Акция Газпром ао не найдена на Московской бирже
+2022-07-16 07:41:35.335  INFO 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:35.335  INFO 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:35.336 ERROR 2240 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Акция Газпром ао не найдена на Московской бирже
+2022-07-16 07:41:48.687  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:41:48.689  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:41:48.692  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Акция GAZP успешно найдена
+2022-07-16 07:41:48.693  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Получение списка дивидендов акции GAZP
+2022-07-16 07:41:48.694 DEBUG 2240 --- [http-nio-8081-exec-7] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/GAZP/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 07:41:48.762 DEBUG 2240 --- [http-nio-8081-exec-7] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (67ms)
+2022-07-16 07:41:48.766  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Список дивидендов акции GAZP получен
+2022-07-16 07:41:48.769  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 07:41:48.770  INFO 2240 --- [http-nio-8081-exec-7] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 07:42:16.602  INFO 2240 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SHARE-SERVICE with eureka with status DOWN
+2022-07-16 07:42:16.603  INFO 2240 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657946536603, current=DOWN, previous=UP]
+2022-07-16 07:42:16.603  INFO 2240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 07:42:16.616  INFO 2240 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 07:42:16.675  INFO 2240 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-16 07:42:19.732  INFO 2240 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-16 07:42:19.788  INFO 2240 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - deregister  status: 200
+2022-07-16 07:42:20.312  INFO 2240 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-16 07:46:17.892  INFO 6012 --- [restartedMain] c.shareservice.ShareServiceApplication   : Starting ShareServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 6012 (C:\Users\umk27\IdeaProjects\MoexClient\ShareService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\ShareService)
+2022-07-16 07:46:17.898  INFO 6012 --- [restartedMain] c.shareservice.ShareServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 07:46:18.060  INFO 6012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-16 07:46:18.061  INFO 6012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-16 07:46:21.179  INFO 6012 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4672a5c8-b4cd-3d60-b251-2d1707dd294a
+2022-07-16 07:46:23.667  INFO 6012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-16 07:46:23.688  INFO 6012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 07:46:23.689  INFO 6012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-16 07:46:24.165  INFO 6012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-16 07:46:24.167  INFO 6012 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6105 ms
+2022-07-16 07:46:25.700  INFO 6012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 07:46:30.951  INFO 6012 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-16 07:46:31.850  INFO 6012 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-16 07:46:31.973  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-16 07:46:31.986  INFO 6012 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-16 07:46:32.045  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 07:46:32.046  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 07:46:32.046  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 07:46:32.047  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 07:46:32.047  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 07:46:32.048  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-16 07:46:32.048  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 07:46:33.014  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 07:46:33.027  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-16 07:46:33.040  INFO 6012 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-16 07:46:33.067  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657946793065 with initial instances count: 0
+2022-07-16 07:46:33.120  INFO 6012 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SHARE-SERVICE with eureka with status UP
+2022-07-16 07:46:33.121  INFO 6012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657946793121, current=UP, previous=STARTING]
+2022-07-16 07:46:33.125  INFO 6012 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 07:46:33.174  INFO 6012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-16 07:46:33.176  INFO 6012 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2022-07-16 07:46:33.367  INFO 6012 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 07:46:33.565  INFO 6012 --- [restartedMain] c.shareservice.ShareServiceApplication   : Started ShareServiceApplication in 17.337 seconds (JVM running for 21.731)
+2022-07-16 07:47:03.026  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 07:47:03.027  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 07:47:03.027  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 07:47:03.028  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 07:47:03.028  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 07:47:03.028  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-07-16 07:47:03.029  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 07:47:03.042  INFO 6012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 07:47:41.659  INFO 6012 --- [http-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-16 07:47:41.660  INFO 6012 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-16 07:47:41.662  INFO 6012 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-16 07:47:41.728  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 07:47:41.743 DEBUG 6012 --- [http-nio-8081-exec-4] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] ---> GET https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.xml?iss.only=securities&iss.meta=off HTTP/1.1
+2022-07-16 07:47:42.209 DEBUG 6012 --- [http-nio-8081-exec-4] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] <--- HTTP/1.1 200 OK (465ms)
+2022-07-16 07:47:42.479  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 07:47:42.481  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Акция GAZP успешно найдена
+2022-07-16 07:47:42.482  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Получение списка дивидендов акции GAZP
+2022-07-16 07:47:42.485 DEBUG 6012 --- [http-nio-8081-exec-4] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/GAZP/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 07:47:42.550 DEBUG 6012 --- [http-nio-8081-exec-4] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (64ms)
+2022-07-16 07:47:42.559  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Список дивидендов акции GAZP получен
+2022-07-16 07:47:42.559  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 07:47:42.560  INFO 6012 --- [http-nio-8081-exec-4] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 07:48:44.967  INFO 6012 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SHARE-SERVICE with eureka with status DOWN
+2022-07-16 07:48:44.968  INFO 6012 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657946924968, current=DOWN, previous=UP]
+2022-07-16 07:48:44.972  INFO 6012 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 07:48:44.985  INFO 6012 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 07:48:45.267  INFO 6012 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-16 07:48:48.373  INFO 6012 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-16 07:48:48.815  INFO 6012 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - deregister  status: 200
+2022-07-16 07:48:49.532  INFO 6012 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-16 07:58:13.346  INFO 10580 --- [restartedMain] c.shareservice.ShareServiceApplication   : Starting ShareServiceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10580 (C:\Users\umk27\IdeaProjects\MoexClient\ShareService\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\ShareService)
+2022-07-16 07:58:13.348  INFO 10580 --- [restartedMain] c.shareservice.ShareServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 07:58:13.449  INFO 10580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-16 07:58:13.450  INFO 10580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-16 07:58:14.948  INFO 10580 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4672a5c8-b4cd-3d60-b251-2d1707dd294a
+2022-07-16 07:58:16.287  INFO 10580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-07-16 07:58:16.299  INFO 10580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 07:58:16.300  INFO 10580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-16 07:58:16.466  INFO 10580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-16 07:58:16.467  INFO 10580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3016 ms
+2022-07-16 07:58:16.974  INFO 10580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 07:58:18.942  INFO 10580 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-16 07:58:19.400  INFO 10580 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-16 07:58:19.495  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-16 07:58:19.505  INFO 10580 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-16 07:58:19.549  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 07:58:19.549  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 07:58:19.550  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 07:58:19.550  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 07:58:19.550  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 07:58:19.551  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-16 07:58:19.551  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 07:58:20.184  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 07:58:20.195  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-16 07:58:20.207  INFO 10580 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-16 07:58:20.224  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657947500223 with initial instances count: 0
+2022-07-16 07:58:20.245  INFO 10580 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SHARE-SERVICE with eureka with status UP
+2022-07-16 07:58:20.246  INFO 10580 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657947500246, current=UP, previous=STARTING]
+2022-07-16 07:58:20.248  INFO 10580 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 07:58:20.290  INFO 10580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-07-16 07:58:20.291  INFO 10580 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2022-07-16 07:58:20.408  INFO 10580 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 07:58:20.503  INFO 10580 --- [restartedMain] c.shareservice.ShareServiceApplication   : Started ShareServiceApplication in 8.006 seconds (JVM running for 10.35)
+2022-07-16 07:58:50.211  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 07:58:50.211  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 07:58:50.212  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 07:58:50.212  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 07:58:50.212  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 07:58:50.213  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-07-16 07:58:50.213  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 07:58:50.227  INFO 10580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 08:00:56.673  INFO 10580 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-16 08:00:56.674  INFO 10580 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-16 08:00:56.676  INFO 10580 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-16 08:00:56.753  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 08:00:56.767 DEBUG 10580 --- [http-nio-8081-exec-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] ---> GET https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.xml?iss.only=securities&iss.meta=off HTTP/1.1
+2022-07-16 08:00:57.221 DEBUG 10580 --- [http-nio-8081-exec-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] <--- HTTP/1.1 200 OK (452ms)
+2022-07-16 08:00:57.546  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 08:00:57.549  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Акция YNDX успешно найдена
+2022-07-16 08:00:57.551  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Получение списка дивидендов акции YNDX
+2022-07-16 08:00:57.553 DEBUG 10580 --- [http-nio-8081-exec-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/YNDX/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 08:00:57.616 DEBUG 10580 --- [http-nio-8081-exec-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (62ms)
+2022-07-16 08:00:57.621  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Список дивидендов акции YNDX получен
+2022-07-16 08:00:57.622  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 08:00:57.622  INFO 10580 --- [http-nio-8081-exec-1] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 08:03:19.557  INFO 10580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-16 08:05:09.924  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 08:05:09.928  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 08:05:09.930  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Акция ГАЗПРОМ ао успешно найдена
+2022-07-16 08:05:09.930  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Получение списка дивидендов акции ГАЗПРОМ ао
+2022-07-16 08:05:09.932 DEBUG 10580 --- [http-nio-8081-exec-3] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/GAZP/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 08:05:10.016 DEBUG 10580 --- [http-nio-8081-exec-3] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (83ms)
+2022-07-16 08:05:10.026  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Список дивидендов акции ГАЗПРОМ ао получен
+2022-07-16 08:05:10.027  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 08:05:10.029  INFO 10580 --- [http-nio-8081-exec-3] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 08:08:19.562  INFO 10580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-16 08:09:56.377  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Получение списка акций
+2022-07-16 08:09:56.378  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Список акций получен
+2022-07-16 08:09:56.379  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Акция ГАЗПРОМ ао успешно найдена
+2022-07-16 08:09:56.379  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Получение списка дивидендов акции ГАЗПРОМ ао
+2022-07-16 08:09:56.380 DEBUG 10580 --- [http-nio-8081-exec-5] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/GAZP/dividends.xml?iss.meta=off HTTP/1.1
+2022-07-16 08:09:56.482 DEBUG 10580 --- [http-nio-8081-exec-5] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (101ms)
+2022-07-16 08:09:56.487  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Список дивидендов акции ГАЗПРОМ ао получен
+2022-07-16 08:09:56.487  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2022-07-16 08:09:56.487  INFO 10580 --- [http-nio-8081-exec-5] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2022-07-16 08:11:41.978  INFO 10580 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SHARE-SERVICE with eureka with status DOWN
+2022-07-16 08:11:41.979  INFO 10580 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657948301979, current=DOWN, previous=UP]
+2022-07-16 08:11:41.979  INFO 10580 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 08:11:41.986  INFO 10580 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 08:11:42.074  INFO 10580 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-16 08:11:45.106  INFO 10580 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-16 08:11:45.115  INFO 10580 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - deregister  status: 200
+2022-07-16 08:11:45.220  INFO 10580 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-16 08:28:40.971  INFO 7180 --- [main] c.s.ShareServiceApplicationTests         : Starting ShareServiceApplicationTests using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 7180 (started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\ShareService)
+2022-07-16 08:28:40.977  INFO 7180 --- [main] c.s.ShareServiceApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 08:28:44.331  INFO 7180 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1fb40c5c-c11c-3fd9-b699-4c77ca0b9cc0
+2022-07-16 08:28:52.682  INFO 7180 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-16 08:28:53.579  INFO 7180 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-16 08:28:53.877  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-16 08:28:53.900  INFO 7180 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-16 08:28:53.999  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-16 08:28:54.000  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-16 08:28:54.000  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-16 08:28:54.000  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-16 08:28:54.000  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-16 08:28:54.001  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-16 08:28:54.002  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-16 08:28:55.277  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-16 08:28:55.294  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-16 08:28:55.312  INFO 7180 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-16 08:28:55.345  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657949335342 with initial instances count: 0
+2022-07-16 08:28:55.396  INFO 7180 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SHARE-SERVICE with eureka with status UP
+2022-07-16 08:28:55.399  INFO 7180 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657949335399, current=UP, previous=STARTING]
+2022-07-16 08:28:55.408  INFO 7180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 08:28:55.465  INFO 7180 --- [main] c.s.ShareServiceApplicationTests         : Started ShareServiceApplicationTests in 15.979 seconds (JVM running for 18.812)
+2022-07-16 08:28:55.607  INFO 7180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 08:28:57.022  INFO 7180 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SHARE-SERVICE with eureka with status DOWN
+2022-07-16 08:28:57.025  INFO 7180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657949337025, current=DOWN, previous=UP]
+2022-07-16 08:28:57.027  INFO 7180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081: registering service...
+2022-07-16 08:28:57.042  INFO 7180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - registration status: 204
+2022-07-16 08:28:57.071  INFO 7180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-16 08:29:00.092  INFO 7180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-16 08:29:00.099  INFO 7180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHARE-SERVICE/host.docker.internal:SHARE-SERVICE:8081 - deregister  status: 200
+2022-07-16 08:29:00.114  INFO 7180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

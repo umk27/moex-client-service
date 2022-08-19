@@ -39,8 +39,6 @@ public class Share {
 
         private double value;
 
-        private String message;
-
         public Dividends() {
         }
 
@@ -60,13 +58,6 @@ public class Share {
             this.value = value;
         }
 
-        public String getMessage() {
-            return message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
-        }
     }
 
     public String getSecId() {

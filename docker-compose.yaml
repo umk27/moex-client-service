@@ -26,7 +26,7 @@ services:
   user-interface:
     image: umk27/moex-client-user-interface:latest
     ports:
-      - "443:443"
+      - "8087:8087"
     networks:
       - moex-client-network
     depends_on:

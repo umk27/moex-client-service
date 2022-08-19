@@ -1,86 +1,170 @@
-2022-07-15 21:27:29.405  INFO 4856 --- [restartedMain] c.u.UserInterfaceApplication             : Starting UserInterfaceApplication using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 4856 (C:\Users\umk27\IdeaProjects\MoexClient\UserInterface\target\classes started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
-2022-07-15 21:27:29.414  INFO 4856 --- [restartedMain] c.u.UserInterfaceApplication             : No active profile set, falling back to 1 default profile: "default"
-2022-07-15 21:27:29.497  INFO 4856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-15 21:27:29.497  INFO 4856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-15 21:27:30.921  INFO 4856 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aba0ac85-add0-33cf-886d-a55ef618ee4e
-2022-07-15 21:27:32.117  INFO 4856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (http)
-2022-07-15 21:27:32.140  INFO 4856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-15 21:27:32.141  INFO 4856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-07-15 21:27:32.363  INFO 4856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-15 21:27:32.364  INFO 4856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2865 ms
-2022-07-15 21:27:32.823  INFO 4856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-15 21:27:32.967  INFO 4856 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'BOND-SERVICE' URL not provided. Will try picking an instance via load-balancing.
-2022-07-15 21:27:33.331  INFO 4856 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'SHARE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
-2022-07-15 21:27:34.727  INFO 4856 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-07-15 21:27:35.083  WARN 4856 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-07-15 21:27:35.187  INFO 4856 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-15 21:27:35.258  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-15 21:27:35.264  INFO 4856 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:27:35.313  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-15 21:27:35.314  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-15 21:27:35.314  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-15 21:27:35.315  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-15 21:27:35.315  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-15 21:27:35.316  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-15 21:27:35.316  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-15 21:27:35.961  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-15 21:27:35.968  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-15 21:27:35.976  INFO 4856 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-15 21:27:35.993  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1657909655992 with initial instances count: 0
-2022-07-15 21:27:36.010  INFO 4856 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-INTERFACE with eureka with status UP
-2022-07-15 21:27:36.010  INFO 4856 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657909656010, current=UP, previous=STARTING]
-2022-07-15 21:27:36.013  INFO 4856 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/host.docker.internal:USER-INTERFACE:443: registering service...
-2022-07-15 21:27:36.050  INFO 4856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (http) with context path ''
-2022-07-15 21:27:36.052  INFO 4856 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 443
-2022-07-15 21:27:36.155  INFO 4856 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/host.docker.internal:USER-INTERFACE:443 - registration status: 204
-2022-07-15 21:27:36.244  INFO 4856 --- [restartedMain] c.u.UserInterfaceApplication             : Started UserInterfaceApplication in 7.944 seconds (JVM running for 9.83)
-2022-07-15 21:28:05.983  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-15 21:28:05.983  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-15 21:28:05.984  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-15 21:28:05.984  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-15 21:28:05.984  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-15 21:28:05.984  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-15 21:28:05.985  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-15 21:28:05.998  INFO 4856 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-15 21:29:06.087  INFO 4856 --- [http-nio-443-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-15 21:29:06.087  INFO 4856 --- [http-nio-443-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-15 21:29:06.090  INFO 4856 --- [http-nio-443-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2022-07-15 21:31:17.593  INFO 4856 --- [http-nio-443-exec-1] c.u.controller.BondController            : Отправка запроса к сервису облигаций
-2022-07-15 21:31:17.780  WARN 4856 --- [http-nio-443-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: BOND-SERVICE
-2022-07-15 21:31:17.782  WARN 4856 --- [http-nio-443-exec-1] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service BOND-SERVICE
-2022-07-15 21:31:17.788 ERROR 4856 --- [http-nio-443-exec-1] c.u.controller.BondController            : Сервис облигаций не доступен
-2022-07-15 21:31:18.320  INFO 4856 --- [http-nio-443-exec-1] c.u.controller.BondController            : Отправка запроса к сервису облигаций
-2022-07-15 21:31:18.322  WARN 4856 --- [http-nio-443-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: BOND-SERVICE
-2022-07-15 21:31:18.323  WARN 4856 --- [http-nio-443-exec-1] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service BOND-SERVICE
-2022-07-15 21:31:18.323 ERROR 4856 --- [http-nio-443-exec-1] c.u.controller.BondController            : Сервис облигаций не доступен
-2022-07-15 21:31:18.829  INFO 4856 --- [http-nio-443-exec-1] c.u.controller.BondController            : Отправка запроса к сервису облигаций
-2022-07-15 21:31:18.831  WARN 4856 --- [http-nio-443-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: BOND-SERVICE
-2022-07-15 21:31:18.831  WARN 4856 --- [http-nio-443-exec-1] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service BOND-SERVICE
-2022-07-15 21:31:18.832 ERROR 4856 --- [http-nio-443-exec-1] c.u.controller.BondController            : Сервис облигаций не доступен
-2022-07-15 21:31:40.566  INFO 4856 --- [http-nio-443-exec-6] c.u.controller.ShareController           : Отправка запроса к сервису акций
-2022-07-15 21:31:40.610  WARN 4856 --- [http-nio-443-exec-6] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: SHARE-SERVICE
-2022-07-15 21:31:40.611  WARN 4856 --- [http-nio-443-exec-6] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service SHARE-SERVICE
-2022-07-15 21:31:40.611 ERROR 4856 --- [http-nio-443-exec-6] c.u.controller.ShareController           : Сервис акций не доступен
-2022-07-15 21:31:41.123  INFO 4856 --- [http-nio-443-exec-6] c.u.controller.ShareController           : Отправка запроса к сервису акций
-2022-07-15 21:31:41.124  WARN 4856 --- [http-nio-443-exec-6] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: SHARE-SERVICE
-2022-07-15 21:31:41.125  WARN 4856 --- [http-nio-443-exec-6] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service SHARE-SERVICE
-2022-07-15 21:31:41.125 ERROR 4856 --- [http-nio-443-exec-6] c.u.controller.ShareController           : Сервис акций не доступен
-2022-07-15 21:31:41.638  INFO 4856 --- [http-nio-443-exec-6] c.u.controller.ShareController           : Отправка запроса к сервису акций
-2022-07-15 21:31:41.640  WARN 4856 --- [http-nio-443-exec-6] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: SHARE-SERVICE
-2022-07-15 21:31:41.640  WARN 4856 --- [http-nio-443-exec-6] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service SHARE-SERVICE
-2022-07-15 21:31:41.641 ERROR 4856 --- [http-nio-443-exec-6] c.u.controller.ShareController           : Сервис акций не доступен
-2022-07-15 21:32:35.328  INFO 4856 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:35:59.099  INFO 4856 --- [http-nio-443-exec-2] c.u.controller.BondController            : Отправка запроса к сервису облигаций
-2022-07-15 21:36:01.911  INFO 4856 --- [http-nio-443-exec-2] c.u.controller.BondController            : Ответ от сервиса облигаций получен
-2022-07-15 21:37:35.346  INFO 4856 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:42:03.630  INFO 4856 --- [http-nio-443-exec-3] c.u.controller.ShareController           : Отправка запроса к сервису акций
-2022-07-15 21:42:04.863  INFO 4856 --- [http-nio-443-exec-3] c.u.controller.ShareController           : Ответ от сервиса акций получен
-2022-07-15 21:42:35.348  INFO 4856 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-15 21:46:21.279  INFO 4856 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-INTERFACE with eureka with status DOWN
-2022-07-15 21:46:21.279  INFO 4856 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1657910781279, current=DOWN, previous=UP]
-2022-07-15 21:46:21.280  INFO 4856 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/host.docker.internal:USER-INTERFACE:443: registering service...
-2022-07-15 21:46:21.299  INFO 4856 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/host.docker.internal:USER-INTERFACE:443 - registration status: 204
-2022-07-15 21:46:21.405  INFO 4856 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2022-07-15 21:46:24.518  INFO 4856 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2022-07-15 21:46:24.759  INFO 4856 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/host.docker.internal:USER-INTERFACE:443 - deregister  status: 200
-2022-07-15 21:46:25.065  INFO 4856 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-17 06:50:12.887  INFO 3688 --- [main] c.u.UserInterfaceApplicationTests        : Starting UserInterfaceApplicationTests using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 3688 (started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-17 06:50:12.914  INFO 3688 --- [main] c.u.UserInterfaceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2022-07-17 06:50:15.463  INFO 3688 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eab7f2b7-c225-305a-a56a-97638dee823c
+2022-07-17 06:50:17.431  INFO 3688 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'BOND-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 06:50:18.189  INFO 3688 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'SHARE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 06:50:22.118  INFO 3688 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-17 06:50:22.757  WARN 3688 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-17 06:50:22.869  INFO 3688 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-17 06:50:23.174  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-17 06:50:23.202  INFO 3688 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-17 06:50:23.297  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-17 06:50:23.302  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-17 06:50:23.303  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-17 06:50:23.308  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-17 06:50:23.308  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-17 06:50:23.311  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-17 06:50:23.313  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-17 06:50:24.593  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-17 06:50:24.610  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-17 06:50:24.651  INFO 3688 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-17 06:50:24.664  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658029824661 with initial instances count: 0
+2022-07-17 06:50:24.743  INFO 3688 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-INTERFACE with eureka with status UP
+2022-07-17 06:50:24.745  INFO 3688 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658029824745, current=UP, previous=STARTING]
+2022-07-17 06:50:24.752  INFO 3688 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:443: registering service...
+2022-07-17 06:50:24.777  INFO 3688 --- [main] c.u.UserInterfaceApplicationTests        : Started UserInterfaceApplicationTests in 13.024 seconds (JVM running for 15.5)
+2022-07-17 06:50:25.025  INFO 3688 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:443 - registration status: 204
+2022-07-17 06:50:26.319  INFO 3688 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-INTERFACE with eureka with status DOWN
+2022-07-17 06:50:26.320  INFO 3688 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658029826320, current=DOWN, previous=UP]
+2022-07-17 06:50:26.322  INFO 3688 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:443: registering service...
+2022-07-17 06:50:26.337  INFO 3688 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:443 - registration status: 204
+2022-07-17 06:50:26.356  INFO 3688 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-17 06:50:29.378  INFO 3688 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-17 06:50:29.427  INFO 3688 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:443 - deregister  status: 200
+2022-07-17 06:50:29.454  INFO 3688 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-17 10:09:30.768  INFO 8832 --- [main] c.u.UserInterfaceApplicationTests        : Starting UserInterfaceApplicationTests using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 8832 (started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-17 10:09:30.783  INFO 8832 --- [main] c.u.UserInterfaceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2022-07-17 10:09:34.669  INFO 8832 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eab7f2b7-c225-305a-a56a-97638dee823c
+2022-07-17 10:09:37.121  INFO 8832 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'BOND-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 10:09:37.930  INFO 8832 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'SHARE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 10:09:44.194  INFO 8832 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-17 10:09:45.358  WARN 8832 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-17 10:09:45.482  INFO 8832 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-17 10:09:46.098  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-17 10:09:46.123  INFO 8832 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-17 10:09:46.621  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-17 10:09:46.621  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-17 10:09:46.622  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-17 10:09:46.622  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-17 10:09:46.623  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-17 10:09:46.623  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-17 10:09:46.624  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-17 10:09:49.073  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-17 10:09:49.092  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-17 10:09:49.100  INFO 8832 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-17 10:09:49.117  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658041789114 with initial instances count: 0
+2022-07-17 10:09:49.172  INFO 8832 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-INTERFACE with eureka with status UP
+2022-07-17 10:09:49.182  INFO 8832 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658041789182, current=UP, previous=STARTING]
+2022-07-17 10:09:49.192  INFO 8832 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085: registering service...
+2022-07-17 10:09:49.310  INFO 8832 --- [main] c.u.UserInterfaceApplicationTests        : Started UserInterfaceApplicationTests in 20.21 seconds (JVM running for 23.947)
+2022-07-17 10:09:49.777  INFO 8832 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085 - registration status: 204
+2022-07-17 10:09:50.970  INFO 8832 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-INTERFACE with eureka with status DOWN
+2022-07-17 10:09:50.971  INFO 8832 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658041790971, current=DOWN, previous=UP]
+2022-07-17 10:09:50.973  INFO 8832 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085: registering service...
+2022-07-17 10:09:50.988  INFO 8832 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085 - registration status: 204
+2022-07-17 10:09:51.020  INFO 8832 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-17 10:09:54.038  INFO 8832 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-17 10:09:54.054  INFO 8832 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085 - deregister  status: 200
+2022-07-17 10:09:54.066  INFO 8832 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-17 10:11:14.150  INFO 10868 --- [main] c.u.UserInterfaceApplicationTests        : Starting UserInterfaceApplicationTests using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10868 (started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-17 10:11:14.164  INFO 10868 --- [main] c.u.UserInterfaceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2022-07-17 10:11:18.968  INFO 10868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eab7f2b7-c225-305a-a56a-97638dee823c
+2022-07-17 10:11:21.477  INFO 10868 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'BOND-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 10:11:22.506  INFO 10868 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'SHARE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 10:11:30.455  INFO 10868 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-17 10:11:33.294  WARN 10868 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-17 10:11:33.890  INFO 10868 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-17 10:11:35.410  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-17 10:11:35.482  INFO 10868 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-17 10:11:35.938  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-17 10:11:35.946  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-17 10:11:35.956  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-17 10:11:35.970  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-17 10:11:35.976  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-17 10:11:35.985  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-17 10:11:35.990  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-17 10:11:42.618  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-17 10:11:42.640  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-17 10:11:42.669  INFO 10868 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-17 10:11:42.724  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658041902717 with initial instances count: 0
+2022-07-17 10:11:42.874  INFO 10868 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-INTERFACE with eureka with status UP
+2022-07-17 10:11:42.901  INFO 10868 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658041902901, current=UP, previous=STARTING]
+2022-07-17 10:11:42.920  INFO 10868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085: registering service...
+2022-07-17 10:11:43.138  INFO 10868 --- [main] c.u.UserInterfaceApplicationTests        : Started UserInterfaceApplicationTests in 31.298 seconds (JVM running for 36.308)
+2022-07-17 10:11:43.557  INFO 10868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085 - registration status: 204
+2022-07-17 10:11:48.910  INFO 10868 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-INTERFACE with eureka with status DOWN
+2022-07-17 10:11:48.925  INFO 10868 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658041908925, current=DOWN, previous=UP]
+2022-07-17 10:11:48.935  INFO 10868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085: registering service...
+2022-07-17 10:11:48.972  INFO 10868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085 - registration status: 204
+2022-07-17 10:11:49.090  INFO 10868 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-17 10:11:52.120  INFO 10868 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-17 10:11:52.146  INFO 10868 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8085 - deregister  status: 200
+2022-07-17 10:11:52.198  INFO 10868 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-17 10:49:10.045  INFO 10696 --- [main] c.u.UserInterfaceApplicationTests        : Starting UserInterfaceApplicationTests using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 10696 (started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-17 10:49:10.055  INFO 10696 --- [main] c.u.UserInterfaceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2022-07-17 10:49:13.140  INFO 10696 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eab7f2b7-c225-305a-a56a-97638dee823c
+2022-07-17 10:49:15.512  INFO 10696 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'BOND-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 10:49:16.364  INFO 10696 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'SHARE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 10:49:22.184  INFO 10696 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-17 10:49:23.074  WARN 10696 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-17 10:49:23.210  INFO 10696 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-17 10:49:23.530  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-17 10:49:23.552  INFO 10696 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-17 10:49:23.677  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-17 10:49:23.678  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-17 10:49:23.683  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-17 10:49:23.690  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-17 10:49:23.694  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-17 10:49:23.695  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-17 10:49:23.699  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-17 10:49:25.637  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-17 10:49:25.642  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-17 10:49:25.650  INFO 10696 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-17 10:49:25.665  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658044165663 with initial instances count: 0
+2022-07-17 10:49:25.705  INFO 10696 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-INTERFACE with eureka with status UP
+2022-07-17 10:49:25.707  INFO 10696 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658044165707, current=UP, previous=STARTING]
+2022-07-17 10:49:25.711  INFO 10696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087: registering service...
+2022-07-17 10:49:25.736  INFO 10696 --- [main] c.u.UserInterfaceApplicationTests        : Started UserInterfaceApplicationTests in 17.047 seconds (JVM running for 19.958)
+2022-07-17 10:49:26.041  INFO 10696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087 - registration status: 204
+2022-07-17 10:49:28.100  INFO 10696 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-INTERFACE with eureka with status DOWN
+2022-07-17 10:49:28.102  INFO 10696 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658044168102, current=DOWN, previous=UP]
+2022-07-17 10:49:28.106  INFO 10696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087: registering service...
+2022-07-17 10:49:28.157  INFO 10696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087 - registration status: 204
+2022-07-17 10:49:28.192  INFO 10696 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-17 10:49:31.209  INFO 10696 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-17 10:49:31.227  INFO 10696 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087 - deregister  status: 200
+2022-07-17 10:49:31.239  INFO 10696 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-07-17 17:33:52.285  INFO 7000 --- [main] c.u.UserInterfaceApplicationTests        : Starting UserInterfaceApplicationTests using Java 17.0.3.1 on DESKTOP-06BCO5G with PID 7000 (started by umk27 in C:\Users\umk27\IdeaProjects\MoexClient\UserInterface)
+2022-07-17 17:33:52.297  INFO 7000 --- [main] c.u.UserInterfaceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2022-07-17 17:33:55.822  INFO 7000 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=eab7f2b7-c225-305a-a56a-97638dee823c
+2022-07-17 17:33:58.170  INFO 7000 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'BOND-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 17:33:59.080  INFO 7000 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'SHARE-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2022-07-17 17:34:04.200  INFO 7000 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-07-17 17:34:05.069  WARN 7000 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-07-17 17:34:05.195  INFO 7000 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-17 17:34:05.483  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-17 17:34:05.504  INFO 7000 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-17 17:34:05.610  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-17 17:34:05.610  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-17 17:34:05.611  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-17 17:34:05.612  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-17 17:34:05.613  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-17 17:34:05.613  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-17 17:34:05.614  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-17 17:34:07.416  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-17 17:34:07.427  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-17 17:34:07.450  INFO 7000 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-17 17:34:07.471  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658068447468 with initial instances count: 0
+2022-07-17 17:34:07.528  INFO 7000 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-INTERFACE with eureka with status UP
+2022-07-17 17:34:07.535  INFO 7000 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658068447535, current=UP, previous=STARTING]
+2022-07-17 17:34:07.543  INFO 7000 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087: registering service...
+2022-07-17 17:34:07.584  INFO 7000 --- [main] c.u.UserInterfaceApplicationTests        : Started UserInterfaceApplicationTests in 16.505 seconds (JVM running for 19.266)
+2022-07-17 17:34:08.012  INFO 7000 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087 - registration status: 204
+2022-07-17 17:34:09.297  INFO 7000 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-INTERFACE with eureka with status DOWN
+2022-07-17 17:34:09.299  INFO 7000 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658068449299, current=DOWN, previous=UP]
+2022-07-17 17:34:09.302  INFO 7000 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087: registering service...
+2022-07-17 17:34:09.336  INFO 7000 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087 - registration status: 204
+2022-07-17 17:34:09.367  INFO 7000 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-07-17 17:34:12.371  INFO 7000 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-07-17 17:34:12.389  INFO 7000 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-INTERFACE/DESKTOP-06BCO5G:USER-INTERFACE:8087 - deregister  status: 200
+2022-07-17 17:34:12.401  INFO 7000 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
