@@ -35,18 +35,18 @@ public class Share {
 
     public static class Dividends{
 
-        private LocalDate registryCloseDate;
+        private String registryCloseDate;
 
         private double value;
 
         public Dividends() {
         }
 
-        public LocalDate getRegistryCloseDate() {
+        public String getRegistryCloseDate() {
             return registryCloseDate;
         }
 
-        public void setRegistryCloseDate(LocalDate registryCloseDate) {
+        public void setRegistryCloseDate(String registryCloseDate) {
             this.registryCloseDate = registryCloseDate;
         }
 

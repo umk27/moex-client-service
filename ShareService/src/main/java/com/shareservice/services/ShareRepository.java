@@ -6,7 +6,6 @@ import com.shareservice.moexclient.ShareClient;
 import com.shareservice.parsers.ShareParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -17,13 +16,16 @@ import java.util.List;
 @CacheConfig(cacheNames = {"shareRepo"})
 public class ShareRepository {
 
-    Logger logger = LoggerFactory.getLogger(ShareRepository.class);
+    private static final Logger logger = LoggerFactory.getLogger(ShareRepository.class);
 
-    @Autowired
-    ShareClient shareClient;
+    private final ShareClient shareClient;
 
-    @Autowired
-    ShareParser shareParser;
+    private final ShareParser shareParser;
+
+    public ShareRepository(ShareClient shareClient, ShareParser shareParser) {
+        this.shareClient = shareClient;
+        this.shareParser = shareParser;
+    }
 
     @Cacheable
     public List<Share> getShares() {

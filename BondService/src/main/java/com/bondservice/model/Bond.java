@@ -1,6 +1,5 @@
 package com.bondservice.model;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class Bond {
@@ -21,7 +20,7 @@ public class Bond {
 
     private boolean amortization;
 
-    private LocalDate nextCouponDate;
+    private String nextCouponDate;
 
     private double couponIncome;
 
@@ -35,7 +34,7 @@ public class Bond {
 
     public static class Coupon {
 
-        private LocalDate couponDate;
+        private String couponDate;
 
         private double value;
 
@@ -44,11 +43,11 @@ public class Bond {
         public Coupon() {
         }
 
-        public LocalDate getCouponDate() {
+        public String getCouponDate() {
             return couponDate;
         }
 
-        public void setCouponDate(LocalDate couponDate) {
+        public void setCouponDate(String couponDate) {
             this.couponDate = couponDate;
         }
 
@@ -137,11 +136,11 @@ public class Bond {
         this.amortization = amortization;
     }
 
-    public LocalDate getNextCouponDate() {
+    public String getNextCouponDate() {
         return nextCouponDate;
     }
 
-    public void setNextCouponDate(LocalDate nextCoupon) {
+    public void setNextCouponDate(String nextCoupon) {
         this.nextCouponDate = nextCoupon;
     }
 

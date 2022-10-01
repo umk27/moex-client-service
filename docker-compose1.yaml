@@ -1,0 +1,50 @@
+version: '3.7'
+
+services:
+  share-service:
+    image: umk27/moex-client-share-service:latest
+    container_name: moex-client-share-service
+    restart: always
+    ports:
+      - "8081:8081"
+    links:
+      - kafka 
+    networks:
+      - moex-client-network
+    depends_on:
+      - kafka
+    environment:
+      - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
+      
+  bond-service:
+    image: umk27/moex-client-bond-service:latest
+    container_name: moex-client-bond-service
+    restart: always
+    ports:
+      - "8083:8083"
+    links:
+      - kafka
+    networks:
+      - moex-client-network
+    depends_on:
+      - kafka
+    environment:
+      - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
+      
+  user-interface:
+    image: umk27/moex-client-user-interface:latest
+    container_name: moex-client-user-interface
+    restart: always
+    ports:
+      - "8087:8087"
+    links:
+      - kafka
+    networks:
+      - moex-client-network
+    depends_on:
+      - kafka
+    environment:
+      - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
+
+networks:
+  moex-client-network:

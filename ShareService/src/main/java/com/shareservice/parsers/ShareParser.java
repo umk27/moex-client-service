@@ -25,7 +25,7 @@ import java.util.List;
 @Service
 public class ShareParser {
 
-    Logger logger = LoggerFactory.getLogger(ShareParser.class);
+   private final static Logger logger = LoggerFactory.getLogger(ShareParser.class);
 
     public List<Share> parse(String shareXML) {
 

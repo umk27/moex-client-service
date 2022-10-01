@@ -26,4 +26,5 @@ public class GetLogsService {
 
         return logs;
     }
+
 }

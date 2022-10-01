@@ -1,12 +1,9 @@
 package com.bondservice.parsers;
 
-import com.bondservice.exceptions.BondNotFoundException;
 import com.bondservice.exceptions.CouponXMLParsingException;
 import com.bondservice.model.Bond;
-import com.bondservice.services.DateBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -20,7 +17,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.StringReader;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,10 +24,7 @@ import java.util.List;
 @Service
 public class CouponParser {
 
-    Logger logger = LoggerFactory.getLogger(CouponParser.class);
-
-    @Autowired
-    private DateBuilder dateBuilder;
+  private final static Logger logger = LoggerFactory.getLogger(CouponParser.class);
 
     public List<Bond.Coupon> parse(String couponXML) {
 
@@ -59,7 +52,7 @@ public class CouponParser {
 
                     if (!couponDate.isEmpty() && !value.isEmpty() && !valueprc.isEmpty()) {
                         Bond.Coupon coupon = new Bond.Coupon();
-                        coupon.setCouponDate(dateBuilder.build(couponDate));
+                        coupon.setCouponDate(couponDate);
                         coupon.setValue(Double.parseDouble(value));
                         coupon.setValueprc(Double.parseDouble(valueprc));
 

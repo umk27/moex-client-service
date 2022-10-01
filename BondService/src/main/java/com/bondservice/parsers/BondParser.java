@@ -1,6 +1,5 @@
 package com.bondservice.parsers;
 
-import com.bondservice.exceptions.BondNotFoundException;
 import com.bondservice.exceptions.BondXMLParsingException;
 import com.bondservice.model.Bond;
 import org.slf4j.Logger;
@@ -26,7 +25,7 @@ import java.util.List;
 @Service
 public class BondParser {
 
-    Logger logger = LoggerFactory.getLogger(BondParser.class);
+    private final static Logger logger = LoggerFactory.getLogger(BondParser.class);
 
     public List<Bond> parse(String bondXML) {
 

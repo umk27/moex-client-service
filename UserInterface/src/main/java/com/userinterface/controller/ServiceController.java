@@ -1,8 +1,8 @@
 package com.userinterface.controller;
 
+
 import com.userinterface.feignclients.BondServiceClient;
 import com.userinterface.feignclients.ShareServiceClient;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,24 +14,27 @@ import java.util.Scanner;
 @RestController
 public class ServiceController {
 
-    @Autowired
-    ShareServiceClient shareServiceClient;
+    private final BondServiceClient bondServiceClient;
 
-    @Autowired
-    BondServiceClient bondServiceClient;
+    private final ShareServiceClient shareServiceClient;
+
+    public ServiceController(BondServiceClient bondServiceClient, ShareServiceClient shareServiceClient) {
+        this.bondServiceClient = bondServiceClient;
+        this.shareServiceClient = shareServiceClient;
+    }
 
     @GetMapping("get-share-service-logs")
-    public String getShareServiceLogs(){
+    public String getShareServiceLogs() {
         return shareServiceClient.getLogs();
     }
 
     @GetMapping("get-bond-service-logs")
-    public String getBondServiceLogs(){
+    public String getBondServiceLogs() {
         return bondServiceClient.getLogs();
     }
 
     @GetMapping("get-main-service-logs")
-    public String getMainServiceLogs(){
+    public String getMainServiceLogs() {
         String logs = "";
         try (FileReader fileReader = new FileReader("logs/LogFile")) {
             Scanner scanner = new Scanner(fileReader);

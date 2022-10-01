@@ -1,13 +1,12 @@
 package com.bondservice.services;
 
-import com.bondservice.exceptions.BondNotFoundException;
-import com.bondservice.exceptions.CouponLimitRequestsException;
+import com.bondservice.exceptions.*;
 import com.bondservice.model.Bond;
 import com.bondservice.moexclient.CouponClient;
 import com.bondservice.parsers.CouponParser;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,20 +15,24 @@ import java.util.List;
 @Service
 public class BondService {
 
-    Logger logger = LoggerFactory.getLogger(BondService.class);
+  private final static Logger logger = LoggerFactory.getLogger(BondService.class);
 
-    @Autowired
-    private BondRepository bondRepository;
+    private final BondRepository bondRepository;
 
-    @Autowired
-    private CouponClient couponClient;
+    private final CouponClient couponClient;
 
-    @Autowired
-    private CouponParser couponParser;
+    private final CouponParser couponParser;
 
-    @Autowired
-    private CouponIncomeCounter couponIncomeCounter;
+    private final CouponIncomeCounter couponIncomeCounter;
 
+    public BondService(BondRepository bondRepository, CouponClient couponClient, CouponParser couponParser, CouponIncomeCounter couponIncomeCounter) {
+        this.bondRepository = bondRepository;
+        this.couponClient = couponClient;
+        this.couponParser = couponParser;
+        this.couponIncomeCounter = couponIncomeCounter;
+    }
+
+    @Retry(name = "bond-exception", fallbackMethod = "bondEx")
     public Bond getBond(String str) {
 
         logger.info("Получение списка облигаций");
@@ -79,5 +82,44 @@ public class BondService {
         return bondResult;
     }
 
+    public Bond bondEx(String str, BondNotFoundException exception) {
+        Bond bond = new Bond();
+        bond.setError("Облигация " + str + " не найдена на Московской бирже. " +
+                "Проверьте правильность ввода SecId/ShortName");
+        return bond;
+    }
+
+    public Bond bondEx(String str, BondXMLParsingException exception) {
+        Bond bond = new Bond();
+        bond.setError("Ошибка парсигна XML файла облигаций");
+        return bond;
+    }
+
+    public Bond bondEx(String str, CouponXMLParsingException exception) {
+        Bond bond = new Bond();
+        bond.setError("Ошибка парсигна XML файла купонов");
+        return bond;
+    }
+
+    public Bond bondEx(String str, CorpBondLimitRequestsException exception) {
+        Bond bond = new Bond();
+        bond.setError("Мосбиржа не отвечает " +
+                "на запрос данных о корпоративных облигациях");
+        return bond;
+    }
+
+    public Bond bondEx(String str, GovBondLimitRequestsException exception) {
+        Bond bond = new Bond();
+        bond.setError("Мосбиржа не отвечает " +
+                "на запрос данных о государственных облигациях");
+        return bond;
+    }
+
+    public Bond bondEx(String str, CouponLimitRequestsException exception) {
+        Bond bond = new Bond();
+        bond.setError("Мосбиржа не отвечает " +
+                "на запрос о получении данных о купонах облигации");
+        return bond;
+    }
 
 }

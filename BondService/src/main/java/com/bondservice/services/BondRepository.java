@@ -20,16 +20,19 @@ import java.util.List;
 @CacheConfig(cacheNames = {"bondRepo"})
 public class BondRepository {
 
-    Logger logger = LoggerFactory.getLogger(BondRepository.class);
+  private final static Logger logger = LoggerFactory.getLogger(BondRepository.class);
 
-    @Autowired
-    private CorporateBondClient corporateBondClient;
+    private final CorporateBondClient corporateBondClient;
 
-    @Autowired
-    private GovernmentBondClient governmentBondClient;
+    private final GovernmentBondClient governmentBondClient;
 
-    @Autowired
-    private BondParser bondParser;
+    private final BondParser bondParser;
+
+    public BondRepository(CorporateBondClient corporateBondClient, GovernmentBondClient governmentBondClient, BondParser bondParser) {
+        this.corporateBondClient = corporateBondClient;
+        this.governmentBondClient = governmentBondClient;
+        this.bondParser = bondParser;
+    }
 
     @Cacheable
     public List<Bond> getBonds() {

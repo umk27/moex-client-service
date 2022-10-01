@@ -2,10 +2,8 @@ package com.shareservice.parsers;
 
 import com.shareservice.exceptions.DividendsXMLParsingException;
 import com.shareservice.model.Share;
-import com.shareservice.services.DateBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -25,10 +23,7 @@ import java.util.List;
 @Service
 public class DividendsParser {
 
-    Logger logger = LoggerFactory.getLogger(DividendsParser.class);
-
-    @Autowired
-    DateBuilder dateBuilder;
+    private final static Logger logger = LoggerFactory.getLogger(DividendsParser.class);
 
     public List<Share.Dividends> parse(String dividendsXML) {
 
@@ -56,7 +51,7 @@ public class DividendsParser {
 
                     if (!registryCloseDate.isEmpty() && !value.isEmpty()) {
                         Share.Dividends dividends = new Share.Dividends();
-                        dividends.setRegistryCloseDate(dateBuilder.build(registryCloseDate));
+                        dividends.setRegistryCloseDate(registryCloseDate);
                         dividends.setValue(Double.parseDouble(value));
 
                         dividendsList.add(dividends);
@@ -68,13 +63,13 @@ public class DividendsParser {
                 logger.error("Ошибка парсигна XML файла дивидендов");
                 throw new DividendsXMLParsingException("Ошибка парсигна XML файла дивидендов");
             } catch (IOException e) {
-                 logger.error("Ошибка парсигна XML файла дивидендов");
-                 throw new DividendsXMLParsingException("Ошибка парсигна XML файла дивидендов");
+                logger.error("Ошибка парсигна XML файла дивидендов");
+                throw new DividendsXMLParsingException("Ошибка парсигна XML файла дивидендов");
             }
 
         } catch (ParserConfigurationException e) {
-             logger.error("Ошибка парсигна XML файла дивидендов");
-              throw new DividendsXMLParsingException("Ошибка парсигна XML файла дивидендов");
+            logger.error("Ошибка парсигна XML файла дивидендов");
+            throw new DividendsXMLParsingException("Ошибка парсигна XML файла дивидендов");
         }
         return dividendsList;
     }

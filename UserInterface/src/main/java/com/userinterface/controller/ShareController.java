@@ -1,25 +1,40 @@
 package com.userinterface.controller;
 
-import com.userinterface.exceptions.BondServiceDoesNotExist;
+import com.google.gson.Gson;
 import com.userinterface.exceptions.ShareServiceDoesNotExist;
-import com.userinterface.feignclients.ShareServiceClient;
+import com.userinterface.kafka.ShareServiceProducer;
 import com.userinterface.model.Share;
 import io.github.resilience4j.retry.annotation.Retry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.Instant;
+
+
 @Controller
 public class ShareController {
 
-    @Autowired
-    ShareServiceClient shareServiceClient;
+    private final ShareServiceProducer shareServiceProducer;
 
-    Logger logger = LoggerFactory.getLogger(ShareController.class);
+    private final Gson jsonConverter;
+
+    private Share share;
+
+
+    public ShareController(ShareServiceProducer shareServiceProducer, Gson jsonConverter) {
+        this.shareServiceProducer = shareServiceProducer;
+        this.jsonConverter = jsonConverter;
+    }
+
+    public void setShare(Share share) {
+        this.share = share;
+    }
+
+    private static final Logger logger = LoggerFactory.getLogger(ShareController.class);
 
     @GetMapping("/")
     public String getMainPage() {
@@ -34,17 +49,27 @@ public class ShareController {
     @GetMapping("/get-share-info")
     @Retry(name = "shareServiceException", fallbackMethod = "shareServiceEx")
     public String getShareInfo(@RequestParam("secid/shortname") String str, Model model) {
+        share = null;
         logger.info("Отправка запроса к сервису акций");
-        Share share = null;
-        try {
-            share = shareServiceClient.getShare(str.trim());
-        } catch (RuntimeException e) {
-            logger.error("Сервис акций не доступен");
-            throw new ShareServiceDoesNotExist("Сервис акций не доступен");
+
+        shareServiceProducer.sendMessage(str);
+
+        Instant now = Instant.now();
+        while (share == null) {
+            logger.info("Ожидание ответа сервиса акций");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Instant time = Instant.now();
+            if (time.toEpochMilli() - now.toEpochMilli() > 10000) {
+                logger.error("Сервис акций не доступен");
+                throw new ShareServiceDoesNotExist("Сервис акций не доступен");
+            }
         }
 
-        logger.info("Ответ от сервиса акций получен");
-
+        logger.info("Ответ сервиса акций получен");
         model.addAttribute("share", share);
         if (share.getMessage() != null) {
             return "show-share-info-message";
@@ -62,4 +87,5 @@ public class ShareController {
         model.addAttribute("share", share);
         return "show-share-info-error";
     }
+
 }

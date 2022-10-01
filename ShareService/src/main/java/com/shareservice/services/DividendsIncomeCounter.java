@@ -12,6 +12,12 @@ import java.util.List;
 @Service
 public class DividendsIncomeCounter {
 
+   private final DateBuilder dateBuilder;
+
+    public DividendsIncomeCounter(DateBuilder dateBuilder) {
+        this.dateBuilder = dateBuilder;
+    }
+
     public Share countDividendsIncome(Share share) {
         List<Share.Dividends> dividendsList = share.getDividendsList();
         LocalDate nowDate = LocalDate.now();
@@ -22,8 +28,8 @@ public class DividendsIncomeCounter {
 
         for (int i = 0; i < dividendsList.size(); i++) {
             Share.Dividends dividends = dividendsList.get(i);
-            if (nowDate.toEpochDay() < dividends.getRegistryCloseDate().toEpochDay()
-                    && dividends.getRegistryCloseDate().toEpochDay() < afterYear.toEpochDay()) {
+            if (nowDate.toEpochDay() < dateBuilder.build(dividends.getRegistryCloseDate()).toEpochDay()
+                    && dateBuilder.build(dividends.getRegistryCloseDate()).toEpochDay() < afterYear.toEpochDay()) {
                 dividendsIncome = dividendsIncome.add(new BigDecimal(String.valueOf(dividends.getValue())));
                 n = n + 1;
                 dividendsInYearList.add(dividends);

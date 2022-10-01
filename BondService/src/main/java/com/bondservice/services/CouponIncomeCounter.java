@@ -11,13 +11,18 @@ import java.util.List;
 @Service
 public class CouponIncomeCounter {
 
+    private final DateBuilder dateBuilder;
+
+    public CouponIncomeCounter(DateBuilder dateBuilder) {
+        this.dateBuilder = dateBuilder;
+    }
 
     public Bond countCouponIncome(Bond bond) {
         List<Bond.Coupon> coupons = bond.getCoupons();
         LocalDate nowDate = LocalDate.now();
         LocalDate afterYear = nowDate.plusYears(1);
-        long couponPeriod = coupons.get(2).getCouponDate().toEpochDay()
-                - coupons.get(1).getCouponDate().toEpochDay();
+        long couponPeriod = dateBuilder.build(coupons.get(2).getCouponDate()).toEpochDay()
+                - dateBuilder.build(coupons.get(1).getCouponDate()).toEpochDay();
         BigDecimal couponIncome = BigDecimal.ZERO;
         double couponValue = 0;
         double couponPercent = 0;
@@ -30,31 +35,31 @@ public class CouponIncomeCounter {
                     < coupons.get(i - 1).getValue()) {
                 amortization = true;
             }
-            if (coupon.getCouponDate().toEpochDay() - nowDate.toEpochDay() < couponPeriod &&
-                    coupon.getCouponDate().toEpochDay() > nowDate.toEpochDay()) {
+            if (dateBuilder.build(coupon.getCouponDate()).toEpochDay() - nowDate.toEpochDay() < couponPeriod &&
+                    dateBuilder.build(coupon.getCouponDate()).toEpochDay() > nowDate.toEpochDay()) {
                 BigDecimal dayCouponValue = new BigDecimal(String.valueOf(coupon.getValue()))
                         .divide(new BigDecimal(String.valueOf(couponPeriod)), 3, RoundingMode.CEILING);
-                BigDecimal NKD = new BigDecimal(String.valueOf(coupon.getCouponDate().toEpochDay() - nowDate.toEpochDay()))
+                BigDecimal NKD = new BigDecimal(dateBuilder.build(String.valueOf(coupon.getCouponDate())).toEpochDay() - nowDate.toEpochDay())
                         .multiply(dayCouponValue);
                 couponIncome = couponIncome.add(NKD);
                 couponValue = coupon.getValue();
                 couponPercent = coupon.getValueprc();
-                nextCoupon = coupon.getCouponDate();
+                nextCoupon = dateBuilder.build(coupon.getCouponDate());
 
-            } else if (coupon.getCouponDate().toEpochDay() > nowDate.toEpochDay() &&
-                    afterYear.toEpochDay() > coupon.getCouponDate().toEpochDay()) {
+            } else if (dateBuilder.build(coupon.getCouponDate()).toEpochDay() > nowDate.toEpochDay() &&
+                    afterYear.toEpochDay() > dateBuilder.build(coupon.getCouponDate()).toEpochDay()) {
                 couponIncome = couponIncome.add(new BigDecimal(String.valueOf(coupon.getValue())));
 
                 if (couponValue == 0) {
                     couponValue = coupon.getValue();
                     couponPercent = coupon.getValueprc();
-                    nextCoupon = coupon.getCouponDate();
+                    nextCoupon = dateBuilder.build(coupon.getCouponDate());
                 }
-            } else if (coupon.getCouponDate().toEpochDay() - afterYear.toEpochDay() < couponPeriod &&
-                    coupon.getCouponDate().toEpochDay() > afterYear.toEpochDay()) {
+            } else if (dateBuilder.build(coupon.getCouponDate()).toEpochDay() - afterYear.toEpochDay() < couponPeriod &&
+                    dateBuilder.build(coupon.getCouponDate()).toEpochDay() > afterYear.toEpochDay()) {
                 BigDecimal dayCouponValue = new BigDecimal(String.valueOf(coupon.getValue()))
                         .divide(new BigDecimal(String.valueOf(couponPeriod)), 3, RoundingMode.CEILING);
-                BigDecimal NKD = new BigDecimal(String.valueOf(coupon.getCouponDate().toEpochDay() - afterYear.toEpochDay()))
+                BigDecimal NKD = new BigDecimal(String.valueOf(dateBuilder.build(coupon.getCouponDate()).toEpochDay() - afterYear.toEpochDay()))
                         .multiply(dayCouponValue);
                 couponIncome = couponIncome.add(new BigDecimal(String.valueOf(coupon.getValue()))
                         .subtract(NKD));
@@ -64,7 +69,7 @@ public class CouponIncomeCounter {
 
         if (!couponIncome.equals(BigDecimal.ZERO)) {
             bond.setCouponIncome(couponIncome.doubleValue());
-            bond.setNextCouponDate(nextCoupon);
+            bond.setNextCouponDate(nextCoupon.toString());
             bond.setAmortization(amortization);
             bond.setCouponPeriod(couponPeriod);
             bond.setCouponNextValue(couponValue);

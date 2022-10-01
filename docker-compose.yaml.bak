@@ -1,45 +1,75 @@
 version: '3.7'
 
 services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    container_name: zookeeper
+    restart: always
+    ports:
+      - "2181:2181"
+    networks:
+      - moex-client-network
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    restart: always
+    ports:
+      - 29092:9092
+    depends_on:
+      - zookeeper
+    networks:
+      - moex-client-network
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:29092,PLAINTEXT_HOST://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      
   share-service:
     image: umk27/moex-client-share-service:latest
+    container_name: moex-client-share-service
+    restart: always
     ports:
       - "8081:8081"
     networks:
       - moex-client-network
     depends_on:
-      - eureka-server
+      - kafka
     environment:
-      - EUREKA_HOST=http://eureka-server:8761/eureka/
-
+      - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
+      
   bond-service:
     image: umk27/moex-client-bond-service:latest
+    container_name: moex-client-bond-service
+    restart: always
     ports:
       - "8083:8083"
     networks:
       - moex-client-network
     depends_on:
-      - eureka-server
+      - kafka
     environment:
-      - EUREKA_HOST=http://eureka-server:8761/eureka/
-
+      - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
+      
   user-interface:
     image: umk27/moex-client-user-interface:latest
+    container_name: moex-client-user-interface
+    restart: always
     ports:
-      - "8080:443"
+      - "8087:8087"
     networks:
       - moex-client-network
     depends_on:
-      - eureka-server
+      - kafka
     environment:
-      - EUREKA_HOST=http://eureka-server:8761/eureka/
-
-  eureka-server:
-    image: umk27/moex-client-eureka-server:latest
-    ports:
-      - "8761:8761"
-    networks:
-      - moex-client-network
-
+      - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
+      
 networks:
   moex-client-network:
