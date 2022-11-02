@@ -8,7 +8,7 @@ services:
     ports:
       - "2181:2181"
     networks:
-      - moex-client-network
+      - kafkanet
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -18,11 +18,11 @@ services:
     container_name: kafka
     restart: always
     ports:
-      - 29092:9092
+      - "29092:9092"
     depends_on:
       - zookeeper
     networks:
-      - moex-client-network
+      - kafkanet
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -39,7 +39,7 @@ services:
     ports:
       - "8081:8081"
     networks:
-      - moex-client-network
+      - kafkanet
     depends_on:
       - kafka
     environment:
@@ -52,7 +52,7 @@ services:
     ports:
       - "8083:8083"
     networks:
-      - moex-client-network
+      - kafkanet
     depends_on:
       - kafka
     environment:
@@ -65,7 +65,7 @@ services:
     ports:
       - "8087:8087"
     networks:
-      - moex-client-network
+      - kafkanet
     depends_on:
       - kafka
       - share-service
@@ -74,4 +74,4 @@ services:
       - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
       
 networks:
-  moex-client-network:
+  kafkanet:

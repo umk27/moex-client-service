@@ -68,6 +68,8 @@ services:
       - moex-client-network
     depends_on:
       - kafka
+      - share-service
+      - bond-service
     environment:
       - BOOTSTRAP_SERVERS=PLAINTEXT://kafka:29092
       
