@@ -15,7 +15,7 @@ import java.util.List;
 @Service
 public class BondService {
 
-  private final static Logger logger = LoggerFactory.getLogger(BondService.class);
+    private final static Logger logger = LoggerFactory.getLogger(BondService.class);
 
     private final BondRepository bondRepository;
 

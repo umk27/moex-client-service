@@ -1857,3 +1857,867 @@ Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstr
 2022-10-01 13:28:18.257  INFO 6956 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
 2022-10-01 13:28:18.268  INFO 6956 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-share-service-1 unregistered
 2022-10-01 13:28:18.269  INFO 6956 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : share-service: Consumer stopped
+2023-11-19 16:18:07.294  INFO 10540 --- [restartedMain] c.shareservice.ShareServiceApplication   : Starting ShareServiceApplication using Java 17.0.7 on DESKTOP-A4CIUCU with PID 10540 (C:\Users\Admin\IdeaProjects\moex-client\moex-client-service\ShareService\target\classes started by Admin in C:\Users\Admin\IdeaProjects\moex-client\moex-client-service\ShareService)
+2023-11-19 16:18:07.295  INFO 10540 --- [restartedMain] c.shareservice.ShareServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-11-19 16:18:07.371  INFO 10540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-19 16:18:07.371  INFO 10540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-19 16:18:08.337  INFO 10540 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f4e44d92-207d-3ab6-8503-ec144b6ebe5d
+2023-11-19 16:18:09.180  INFO 10540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-19 16:18:09.197  INFO 10540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-19 16:18:09.198  INFO 10540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-19 16:18:09.314  INFO 10540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-19 16:18:09.314  INFO 10540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1942 ms
+2023-11-19 16:18:09.896  WARN 10540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-11-19 16:18:11.544  INFO 10540 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [kafka:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-11-19 16:18:13.849  WARN 10540 --- [restartedMain] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka:29092 from bootstrap.servers as DNS resolution failed for kafka
+2023-11-19 16:18:13.856 ERROR 10540 --- [restartedMain] o.springframework.kafka.core.KafkaAdmin  : Could not create admin
+
+org.apache.kafka.common.KafkaException: Failed to create new KafkaAdminClient
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:538) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.admin.Admin.create(Admin.java:143) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:49) ~[kafka-clients-3.1.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.createAdmin(KafkaAdmin.java:228) ~[spring-kafka-2.8.6.jar:2.8.6]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:166) ~[spring-kafka-2.8.6.jar:2.8.6]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:145) ~[spring-kafka-2.8.6.jar:2.8.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:972) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.shareservice.ShareServiceApplication.main(ShareServiceApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:89) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:490) ~[kafka-clients-3.1.1.jar:na]
+	... 20 common frames omitted
+
+2023-11-19 16:18:13.881  INFO 10540 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-share-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = share-service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-19 16:18:13.943  INFO 10540 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2023-11-19 16:18:13.943  INFO 10540 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2023-11-19 16:18:13.943  INFO 10540 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1700399893942
+2023-11-19 16:18:13.945  INFO 10540 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-share-service-1, groupId=share-service] Subscribed to topic(s): share_request
+2023-11-19 16:18:13.966  INFO 10540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-19 16:18:14.142  INFO 10540 --- [restartedMain] c.shareservice.ShareServiceApplication   : Started ShareServiceApplication in 7.441 seconds (JVM running for 9.261)
+2023-11-19 16:18:14.280  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Error while fetching metadata with correlation id 2 : {share_request=LEADER_NOT_AVAILABLE}
+2023-11-19 16:18:14.281  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-share-service-1, groupId=share-service] Cluster ID: mTbYEurCQSWc9Em4nIvHNQ
+2023-11-19 16:18:14.282  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-11-19 16:18:14.284  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] (Re-)joining group
+2023-11-19 16:18:14.298  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 2147483646 disconnected.
+2023-11-19 16:18:14.300  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 2147483646 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:14.301  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+2023-11-19 16:18:14.304  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:14.304  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:14.389  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:14.390  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:14.501  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:14.502  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:14.674  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:14.674  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:15.099  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:15.099  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:15.955  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:15.955  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:16.936  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:16.937  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:18.109  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:18.110  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:19.280  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:19.281  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:20.203  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:20.204  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:21.122  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:21.123  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:22.167  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:22.168  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:23.272  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:23.273  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:24.481  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:24.482  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:25.649  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:25.650  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:26.691  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:26.692  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:27.797  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:27.798  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:28.783  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:28.784  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:29.987  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:29.987  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:30.850  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:30.851  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:32.027  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:32.028  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:33.015  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:33.016  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:34.125  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:34.126  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:35.046  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:35.046  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:36.216  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:36.217  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:37.200  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:37.201  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:38.382  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:38.383  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:39.262  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:39.262  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:40.372  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:40.372  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:41.487  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:41.488  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:42.670  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:42.671  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:43.526  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:43.527  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:44.569  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:44.570  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:45.552  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:45.552  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:46.723  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:46.723  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:47.768  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:47.768  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:48.937  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:48.938  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:50.106  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:50.107  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:51.090  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:51.090  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:52.137  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:52.137  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:53.243  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:53.244  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:54.336  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:54.337  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:55.319  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:55.320  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:56.367  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:56.368  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:57.531  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:57.532  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:58.701  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:58.702  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:18:59.650  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:18:59.651  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:00.831  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:00.832  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:01.875  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:01.875  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:03.046  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:03.047  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:04.029  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:04.030  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:05.010  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:05.010  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:05.865  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:05.865  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:06.850  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:06.850  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:07.893  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:07.893  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:09.005  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:09.005  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:09.922  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:09.923  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:11.094  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:11.095  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:12.203  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:12.204  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:13.311  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:13.312  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:14.418  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:14.418  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:15.273  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:15.274  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:16.134  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:16.134  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:17.176  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:17.177  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:18.287  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:18.287  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:19.487  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:19.487  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:20.538  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:20.538  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:21.457  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:21.457  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:22.693  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:22.694  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:23.546  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:23.546  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:24.682  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:24.683  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:25.595  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:25.595  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:26.644  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:26.644  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:27.498  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:27.499  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:28.415  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:28.416  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:29.504  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:29.505  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:30.676  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:30.677  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:31.777  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:31.778  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:32.761  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:32.762  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:33.741  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:33.741  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:34.958  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:34.958  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:36.128  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:36.129  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:37.301  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:37.302  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:38.159  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:38.159  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:39.340  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:39.341  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:40.322  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:40.322  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:41.175  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:41.176  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:42.165  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:42.166  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:43.274  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:43.275  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:44.472  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:44.472  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:45.576  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:45.577  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:46.558  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:46.559  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:47.478  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:47.478  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:48.339  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:48.340  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:49.426  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:49.427  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:50.661  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:50.662  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:51.703  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:51.703  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:52.744  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:52.745  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:53.604  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:53.604  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:54.492  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:54.492  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:55.662  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:55.662  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:56.580  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:56.580  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:57.498  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:57.499  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:58.552  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:58.553  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:19:59.499  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:19:59.499  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:00.727  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:00.728  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:01.585  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:01.586  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:02.816  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:02.816  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:03.805  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:03.806  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:04.879  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:04.879  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:05.794  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:05.794  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:06.712  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:06.713  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:07.574  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:07.574  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:08.675  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:08.676  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:09.826  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:09.827  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:10.996  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:10.997  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:12.166  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:12.167  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:13.203  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:13.204  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:14.401  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:14.401  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:15.379  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:15.380  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:16.235  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:16.236  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:17.404  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:17.405  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:18.323  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:18.324  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:19.353  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:19.354  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:20.458  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:20.458  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:21.382  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:21.382  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:22.419  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:22.419  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:23.281  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:23.281  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:24.166  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:24.167  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:25.024  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:25.025  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:26.195  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:26.196  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:27.052  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:27.053  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:28.287  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:28.287  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:29.301  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:29.302  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:30.271  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node 1 disconnected.
+2023-11-19 16:20:30.272  WARN 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Connection to node 1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-19 16:20:30.448  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-19 16:20:30.448  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Request joining group due to: consumer pro-actively leaving the group
+2023-11-19 16:20:30.448  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-share-service-1, groupId=share-service] Unsubscribed all topics or patterns and assigned partitions
+2023-11-19 16:20:30.449  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-19 16:20:30.449  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Request joining group due to: consumer pro-actively leaving the group
+2023-11-19 16:20:30.449  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-11-19 16:20:30.450  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-19 16:20:30.450  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-11-19 16:20:30.453  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-share-service-1 unregistered
+2023-11-19 16:20:30.454  INFO 10540 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : share-service: Consumer stopped
+2023-11-19 16:31:46.867  INFO 13716 --- [restartedMain] c.shareservice.ShareServiceApplication   : Starting ShareServiceApplication using Java 17.0.7 on DESKTOP-A4CIUCU with PID 13716 (C:\Users\Admin\IdeaProjects\moex-client\moex-client-service\ShareService\target\classes started by Admin in C:\Users\Admin\IdeaProjects\moex-client\moex-client-service\ShareService)
+2023-11-19 16:31:46.868  INFO 13716 --- [restartedMain] c.shareservice.ShareServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-11-19 16:31:46.925  INFO 13716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-19 16:31:46.925  INFO 13716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-19 16:31:47.738  INFO 13716 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f4e44d92-207d-3ab6-8503-ec144b6ebe5d
+2023-11-19 16:31:48.475  INFO 13716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-19 16:31:48.487  INFO 13716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-19 16:31:48.487  INFO 13716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-11-19 16:31:48.588  INFO 13716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-19 16:31:48.588  INFO 13716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1663 ms
+2023-11-19 16:31:48.964  WARN 13716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-11-19 16:31:50.212  INFO 13716 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [kafka:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-11-19 16:31:52.507  WARN 13716 --- [restartedMain] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka:9092 from bootstrap.servers as DNS resolution failed for kafka
+2023-11-19 16:31:52.515 ERROR 13716 --- [restartedMain] o.springframework.kafka.core.KafkaAdmin  : Could not create admin
+
+org.apache.kafka.common.KafkaException: Failed to create new KafkaAdminClient
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:538) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.admin.Admin.create(Admin.java:143) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:49) ~[kafka-clients-3.1.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.createAdmin(KafkaAdmin.java:228) ~[spring-kafka-2.8.6.jar:2.8.6]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:166) ~[spring-kafka-2.8.6.jar:2.8.6]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:145) ~[spring-kafka-2.8.6.jar:2.8.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:972) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.shareservice.ShareServiceApplication.main(ShareServiceApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:89) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:48) ~[kafka-clients-3.1.1.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:490) ~[kafka-clients-3.1.1.jar:na]
+	... 20 common frames omitted
+
+2023-11-19 16:31:52.536  INFO 13716 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-share-service-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = share-service
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-19 16:31:52.611  INFO 13716 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2023-11-19 16:31:52.612  INFO 13716 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2023-11-19 16:31:52.612  INFO 13716 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1700400712610
+2023-11-19 16:31:52.616  INFO 13716 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-share-service-1, groupId=share-service] Subscribed to topic(s): share_request
+2023-11-19 16:31:52.638  INFO 13716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-19 16:31:52.811  INFO 13716 --- [restartedMain] c.shareservice.ShareServiceApplication   : Started ShareServiceApplication in 6.592 seconds (JVM running for 7.398)
+2023-11-19 16:31:52.942  WARN 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Error while fetching metadata with correlation id 2 : {share_request=LEADER_NOT_AVAILABLE}
+2023-11-19 16:31:52.944  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-share-service-1, groupId=share-service] Cluster ID: jE6L9fxCTxCB-jPDInLa1A
+2023-11-19 16:31:52.945  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2023-11-19 16:31:52.948  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] (Re-)joining group
+2023-11-19 16:31:52.978  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Request joining group due to: need to re-join with the given member-id
+2023-11-19 16:31:52.978  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] (Re-)joining group
+2023-11-19 16:31:53.049  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-share-service-1, groupId=share-service] Resetting the last seen epoch of partition share_request-0 to 0 since the associated topicId changed from null to 6su-qLteSnmQDchcKO1gVA
+2023-11-19 16:31:55.987  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Successfully joined group with generation Generation{generationId=1, memberId='consumer-share-service-1-5f934a3e-723f-4f0b-b769-89b2bc119e18', protocol='range'}
+2023-11-19 16:31:55.993  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Finished assignment for group at generation 1: {consumer-share-service-1-5f934a3e-723f-4f0b-b769-89b2bc119e18=Assignment(partitions=[share_request-0])}
+2023-11-19 16:31:56.010  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Successfully synced group in generation Generation{generationId=1, memberId='consumer-share-service-1-5f934a3e-723f-4f0b-b769-89b2bc119e18', protocol='range'}
+2023-11-19 16:31:56.010  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Notifying assignor about the new Assignment(partitions=[share_request-0])
+2023-11-19 16:31:56.013  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Adding newly assigned partitions: share_request-0
+2023-11-19 16:31:56.023  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Found no committed offset for partition share_request-0
+2023-11-19 16:31:56.031  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-share-service-1, groupId=share-service] Resetting offset for partition share_request-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2023-11-19 16:31:56.032  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : share-service: partitions assigned: [share_request-0]
+2023-11-19 16:33:43.170  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.kafka.Consumer          : Запрос получен
+2023-11-19 16:33:43.193  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Получение списка акций
+2023-11-19 16:33:43.202 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] ---> GET https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.xml?iss.only=securities&iss.meta=off HTTP/1.1
+2023-11-19 16:33:43.533 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] <--- HTTP/1.1 200 OK (330ms)
+2023-11-19 16:33:43.724  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Список акций получен
+2023-11-19 16:33:43.725  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Акция GAZP успешно найдена
+2023-11-19 16:33:43.725  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Получение списка дивидендов акции GAZP
+2023-11-19 16:33:43.726 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/GAZP/dividends.xml?iss.meta=off HTTP/1.1
+2023-11-19 16:33:43.779 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (52ms)
+2023-11-19 16:33:43.789  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Список дивидендов акции GAZP получен
+2023-11-19 16:33:43.790  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2023-11-19 16:33:43.806  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2023-11-19 16:33:43.817  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2023-11-19 16:33:43.826  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-11-19 16:33:43.842  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2023-11-19 16:33:43.843  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2023-11-19 16:33:43.843  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1700400823842
+2023-11-19 16:33:43.857  INFO 13716 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition share_response-0 to 0 since the associated topicId changed from null to cjGHu_S5RbasHll1ZI44YQ
+2023-11-19 16:33:43.857  INFO 13716 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: jE6L9fxCTxCB-jPDInLa1A
+2023-11-19 16:33:43.858  INFO 13716 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2 with epoch 0
+2023-11-19 16:33:43.862  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.kafka.Consumer          : Результат отправлен
+2023-11-19 16:40:53.145  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-share-service-1, groupId=share-service] Node -1 disconnected.
+2023-11-19 16:42:43.919  INFO 13716 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2023-11-19 16:56:43.038  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.kafka.Consumer          : Запрос получен
+2023-11-19 16:56:43.039  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Получение списка акций
+2023-11-19 16:56:43.041 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] ---> GET https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.xml?iss.only=securities&iss.meta=off HTTP/1.1
+2023-11-19 16:56:43.157 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.moexclient.ShareClient  : [ShareClient#getShares] <--- HTTP/1.1 200 OK (116ms)
+2023-11-19 16:56:43.283  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Список акций получен
+2023-11-19 16:56:43.283  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Акция LKOH успешно найдена
+2023-11-19 16:56:43.283  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Получение списка дивидендов акции LKOH
+2023-11-19 16:56:43.284 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] ---> GET http://iss.moex.com/iss/securities/LKOH/dividends.xml?iss.meta=off HTTP/1.1
+2023-11-19 16:56:43.379 DEBUG 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.s.moexclient.DividendsClient           : [DividendsClient#getDividends] <--- HTTP/1.1 200 OK (95ms)
+2023-11-19 16:56:43.384  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Список дивидендов акции LKOH получен
+2023-11-19 16:56:43.384  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Рассчет годового дохода по дивидендам
+2023-11-19 16:56:43.385  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.services.ShareService   : Годовой доход по дивидендам рассчитан
+2023-11-19 16:56:43.389  INFO 13716 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition share_response-0 to 0 since the associated topicId changed from null to cjGHu_S5RbasHll1ZI44YQ
+2023-11-19 16:56:43.392  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.shareservice.kafka.Consumer          : Результат отправлен
+2023-11-19 16:58:30.806  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Revoke previously assigned partitions share_request-0
+2023-11-19 16:58:30.806  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : share-service: partitions revoked: [share_request-0]
+2023-11-19 16:58:30.807  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Member consumer-share-service-1-5f934a3e-723f-4f0b-b769-89b2bc119e18 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2023-11-19 16:58:30.807  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-19 16:58:30.807  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Request joining group due to: consumer pro-actively leaving the group
+2023-11-19 16:58:30.807  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-share-service-1, groupId=share-service] Unsubscribed all topics or patterns and assigned partitions
+2023-11-19 16:58:30.808  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-19 16:58:30.808  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-share-service-1, groupId=share-service] Request joining group due to: consumer pro-actively leaving the group
+2023-11-19 16:58:30.814  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-11-19 16:58:30.814  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-19 16:58:30.814  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-11-19 16:58:30.818  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-share-service-1 unregistered
+2023-11-19 16:58:30.818  INFO 13716 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : share-service: Consumer stopped
+2023-11-19 16:58:30.830  INFO 13716 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-11-19 16:58:30.833  INFO 13716 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-11-19 16:58:30.834  INFO 13716 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-19 16:58:30.834  INFO 13716 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-11-19 16:58:30.834  INFO 13716 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered

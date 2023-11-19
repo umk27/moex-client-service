@@ -52,7 +52,7 @@ public class BondParser {
                     String secId = element.getAttribute("SECID");
                     String shortName = element.getAttribute("SHORTNAME");
                     String latName = element.getAttribute("LATNAME");
-                    String prevPrice = element.getAttribute("PREVADMITTEDQUOTE");
+                    String prevPrice = element.getAttribute("PREVPRICE");
 
                     if (!secId.isEmpty() && !shortName.isEmpty() && !latName.isEmpty() && !prevPrice.isEmpty()) {
                         Bond bond = new Bond();
