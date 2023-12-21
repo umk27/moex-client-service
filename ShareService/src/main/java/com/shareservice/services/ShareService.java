@@ -5,6 +5,7 @@ import com.shareservice.model.Share;
 import com.shareservice.moexclient.DividendsClient;
 import com.shareservice.parsers.DividendsParser;
 import io.github.resilience4j.retry.annotation.Retry;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@Slf4j
 public class ShareService {
 
    private final static Logger logger = LoggerFactory.getLogger(ShareService.class);
